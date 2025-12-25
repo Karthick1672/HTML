@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whisper Face</title>
+    <style>
+        body
+        {
+            margin: 0 ;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #212121;
+        }
+        .container
+        {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img
+        {
+            height: 300px;
+        }
+        .e1,.e2
+        {
+            width: 12px;
+            height: 12px;
+            background-color: #efefef;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .e1
+        {
+            margin-right: 65px;
+            margin-bottom: 90px;
+        }
+        .e2
+        {
+            margin-left: 39px;
+            margin-bottom: 92px;
+        }
+        /* .eyes
+        {
+            position: absolute;
+            /* margin-right: 100px;
+            margin-bottom: 100px;
+            width: inherit;
+            height: 20px;
+            background-color: aqua; */
+            /* display: flex; */
+        /* }   */ 
+        .eye1,.eye2
+        {
+            width: 10px;
+            height: 10px;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .eye1
+        {
+            margin-right: 66px;
+            margin-bottom: 90px;
+        }
+        .eye2
+        {
+            margin-left: 40px;
+            margin-bottom: 92px;
+        }
+        .w1,.w2
+        {
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: #ffffff;
+        }
+        .display
+        {
+            color: #efefef;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="display" id="display">0,0</div>
+    <div class="container" id="container">
+        <img src="images/Whisper.jpg" id="whisper" alt="">
+        <div class="e1"></div>
+        <div class="e2"></div>
+        <!-- <div class="eyes" id="eyes"> -->
+            <div class="eye1" id="eye1">
+                <div class="w1"></div>
+            </div>
+            <div class="eye2" id="eye2">
+                <div class="w2"></div>
+            </div>
+        <!-- </div> -->
+        
+    </div>
+    
+
+    <script>
+        const eye1 = document.getElementById("eye1");
+        const eye2 = document.getElementById("eye2");
+        const bg = document.getElementById("container");
+        const display = document.getElementById("display");
+        const Whisper = document.getElementById("whisper");
+        // const eyes = document.getElementById("eyes");
+
+        bg.addEventListener('mousemove',function(event){
+            const x = event.clientX * 100 / window.innerWidth + '%';
+
+            for (let i = 0; i < 2; i++)
+            {
+                eye1[i].style.left = x;
+            }
+        
+
+        
+            const y = event.clientY;
+            display.innerHTML = x+","+y
+
+            // 'getBoundingClientRect()' used to get the SIZE & POSITION of HTML element.
+            // const  rekt = Whisper.getBoundingClientRect();
+            // const anX = rekt.left + rekt.width/2;
+            // const anY = rekt.top + rekt.height/2;
+
+            // console.log(eye1.style.position)
+            // const angDeg = angle(x,y,anX,anY);
+
+            
+            
+            
+            // console.log(angDeg);
+            
+
+            
+        })
+
+        function angle(cx,cy,ex,ey)
+        {
+            const dy = ey-cy;
+            const dx = ex-cx;
+            const rad = Math.atan2(dy,dx);
+            const deg = rad * 180 / Math.PI;
+            return deg;
+        }
+        
+
+    </script>
+
+</body>
+</html>

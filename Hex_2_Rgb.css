@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #212121;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.input {
+  background-color: #212121;
+  height: 40px;
+  /* text-align: center; */
+  border: 2px solid white;
+  border-radius: 8px;
+  /* box-shadow: 3px 3px 2px rgb(249, 255, 85); */
+  color: aqua;
+  font-size: 25px;
+  text-align: center;
+  width: 150px;
+  height: 50px;
+}
+.input:focus {
+  color: rgb(0, 255, 255);
+  background-color: #212121;
+  outline-color: rgb(0, 255, 255);
+  box-shadow: -3px -3px 15px rgb(0, 255, 255);
+  transition: 0.1s;
+  transition-property: box-shadow;
+}
+/* Button css */
+.btn {
+  font-size: 15px;
+  background: transparent;
+  border: none;
+  padding: 1em 1.5em;
+  color: #ffc506;
+  text-transform: uppercase;
+  position: relative;
+  /* left: 0px; */
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #ffc506;
+  transition: 0.5s ease;
+}
+.btn:hover {
+  background-color: #ffc506;
+  color: black;
+  transition-delay: 0.5s;
+}
+.btn:hover::before {
+  width: 100%;
+}
+.btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background-color: #ffc506;
+  transition: 0.4s ease;
+  z-index: -1;
+}
+
+/* rgb display */
+.card {
+  width: 150px;
+  height: 50px;
+  background: linear-gradient(
+    45deg,
+    aqua 25%,
+    aqua 25%,
+    #444 25%,
+    #444 50%,
+    aqua 50%,
+    aqua 75%,
+    #444 75%,
+    #444 100%
+  );
+  animation: animate 15s linear infinite;
+  transition: 0.3s;
+  background-size: 60px 60px;
+  position: relative;
+  overflow: visible;
+  border-radius: 10px;
+}
+.card-info {
+  position: absolute;
+  width: 96%;
+  height: 94%;
+  left: 2%;
+  top: 2%;
+  background-color: black;
+  border-radius: 10px;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-info p {
+  color: white;
+  font-weight: 600;
+  font-size: 23px;
+  background-color: black;
+}
+@keyframes animate {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: 1000px;
+  }
+}
+#displayer {
+  width: 100px;
+  height: 50px;
+  border: 2px solid #f1f1f1;
+  border-radius: 8px;
+  position: relative;
+  top: 40px;
+}
+h2,
+h3 {
+  color: #f1f1f1;
+  font-weight: 200;
+}
+.hex2rgb {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* 2 rgb */
+.colorMixer {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.rgbm {
+  background-color: #212121;
+  height: 40px;
+  border: 2px solid rgb(0, 128, 128);
+  border-radius: 8px;
+  color: aqua;
+  font-size: 18px;
+  text-align: center;
+  width: 50px;
+  height: 30px;
+}
+.rgbm:focus {
+  color: rgb(0, 255, 255);
+  background-color: #212121;
+  outline-color: rgb(0, 255, 255);
+  box-shadow: -3px -3px 15px rgb(0, 255, 255);
+  transition: 0.1s;
+  transition-property: box-shadow;
+}
+#display1 {
+  width: 100px;
+  height: 50px;
+  border: 2px solid #f1f1f1;
+  border-radius: 8px;
+  position: absolute;
+  left: 200px;
+  top: 30px;
+}
+#con 
+{
+  margin: 20px;
+}
+#display2 {
+  width: 100px;
+  height: 50px;
+  border: 2px solid #f1f1f1;
+  border-radius: 8px;
+  position: relative;
+  left: 200px;
+  top: -45px;
+}
+
+#display3 {
+  width: 100px;
+  height: 50px;
+  border: 2px solid #f1f1f1;
+  border-radius: 8px;
+}
+#mix_code {
+  color: #f1f1f1;
+  font-size: 20px;
+  font-weight: 200;
+  margin-top: 20px;
+}
+#mix_Hex_code {
+  color: #f1f1f1;
+  font-size: 20px;
+  font-weight: 200;
+  margin-top: 20px;
+}
+.a1 {
+  position: absolute;
+  top: 100px;
+}
+.a2 {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.a3 {
+  margin-top: 80px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.rgb1 {
+  position: relative;
+  top: 30px;
+}
+#mix {
+  /* position: relative;
+  left: 200px;
+  top: -50x; */
+  margin-bottom: 20px;
+}
+#pick
+{
+  position: absolute;
+  top: 460px;
+  left: 85px;
+}
+#pick_code
+{
+  position: relative;
+  top: 110px;
+  color: #f1f1f1;
+  font-size: 20px;
+  font-weight: 200;
+}

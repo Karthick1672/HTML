@@ -1,0 +1,2935 @@
+:root {
+  --width: 80px;
+  --height: 35px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif, "Helvetica Neue", Helvetica,
+    sans-serif;
+}
+h2 {
+  text-align: center;
+  color: #90afc5;
+  background-color: #212121;
+  padding: 5px;
+  padding-left: 40px;
+  width: 200vw;
+}
+.category {
+  width: 40px;
+  height: 200vh;
+  background-color: pink;
+  position: absolute;
+}
+.pa_category {
+  width: 40px;
+  height: 100vh;
+  background-color: pink;
+  position: absolute;
+  right: -1000px;
+}
+.maternal {
+  width: 70vw;
+  height: 200vh;
+  background-color: #31473a;
+  position: relative;
+  top: 0px;
+  left: 40px;
+  /* background-color: #101820;   dark-charcoal*/
+}
+.paternal {
+  width: 200vw;
+  height: 200vh;
+  position: absolute;
+  top: 38px;
+  
+  z-index: -1;
+  /* background-color: #edf4f2; */
+  background-color: #fee715;  
+   /* dark-yellow */
+}
+p {
+  color: lime;
+}
+/* Ayyayu */
+.card1 {
+  width: var(--width);
+  height: var(--height);
+  background: #945482;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px #945482;
+  /* font-size: 30px; */
+  /* font-weight: 900; */
+  position: absolute;
+  left: 430px;
+  top: 50px;
+}
+.card1:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px #945482;
+  background: #101820;
+}
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  color: #31473a;
+  font-weight: 900;
+  border-radius: 15px;
+}
+.card1:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  color: #ffe600;
+  font-size: 0.60rem;
+  font-weight: 900;
+  /* font-size: 0px; */
+  text-align: center;
+  transform: rotate(90deg) scale(-1);
+}
+.card1:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: 0.60rem;
+  transform: rotate(0deg);
+  color: #945482;
+}
+/* Palanimal */
+.card2 {
+  width: var(--width);
+  height: var(--height);
+  background: #8fa009;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px #8fa009;
+  /* font-size: 30px; */
+  /* font-weight: 900; */
+  position: absolute;
+  left: 550px;
+  top: 50px;
+  border-radius: 50%;
+}
+.card2:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px #8fa009;
+  background: #101820;
+}
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  color: #31473a;
+  font-weight: 900;
+  border-radius: 15px;
+}
+.card2:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  color: #ffe600;
+  font-size: 0.60rem;
+  font-weight: 900;
+  /* font-size: 0px; */
+  text-align: center;
+  transform: rotate(90deg) scale(-1);
+}
+.card2:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: 0.60rem;
+  transform: rotate(0deg);
+  color: #8fa009;
+}
+/* Sivagamy */
+.card3 {
+  width: var(--width);
+  height: var(--height);
+  background: #8fa009;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px #8fa009;
+  /* font-size: 30px; */
+  /* font-weight: 900; */
+  position: absolute;
+  left: 700px;
+  top: 50px;
+  border-radius: 50%;
+}
+.card3:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px #8fa009;
+  background: #101820;
+}
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  color: #31473a;
+  font-weight: 900;
+  border-radius: 15px;
+}
+.card3:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  color: #ffe600;
+  font-size: 0.60rem;
+  font-weight: 900;
+  /* font-size: 0px; */
+  text-align: center;
+  transform: rotate(90deg) scale(-1);
+}
+.card3:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: 0.60rem;
+  transform: rotate(0deg);
+  color: #8fa009;
+}
+/* ???(Sivagamy's husband) */
+.card4 {
+  width: var(--width);
+  height: var(--height);
+  background: #f0620f;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px #f0620f;
+  /* font-size: 30px; */
+  /* font-weight: 900; */
+  position: absolute;
+  left: 820px;
+  top: 50px;
+}
+.card4:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px #f0620f;
+  background: #101820;
+}
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  color: #31473a;
+  font-weight: 900;
+  border-radius: 15px;
+}
+.card4:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  color: #ffe600;
+  font-size: 0.60rem;
+  font-weight: 900;
+  /* font-size: 0px; */
+  text-align: center;
+  transform: rotate(90deg) scale(-1);
+}
+.card4:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: 0.60rem;
+  transform: rotate(0deg);
+  color: #f0620f;
+}
+/* Ramesh */
+.card5 {
+  width: var(--width);
+  height: var(--height);
+  background: #BF810C;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px #BF810C;
+  /* font-size: 30px; */
+  /* font-weight: 900; */
+  position: absolute;
+  left: 700px;
+  top: 225px;
+}
+.card5:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px #BF810C;
+  background: #101820;
+}
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  color: #31473a;
+  font-weight: 900;
+  border-radius: 15px;
+}
+.card5:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  color: #ffe600;
+  font-size: 0.60rem;
+  font-weight: 900;
+  /* font-size: 0px; */
+  text-align: center;
+  transform: rotate(90deg) scale(-1);
+}
+.card5:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: 0.60rem;
+  transform: rotate(0deg);
+  color: #BF810C;
+}
+/* Kanaga */
+.card6 {
+  width: var(--width);
+  height: var(--height);
+  background: #BF810C;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px #BF810C;
+  /* font-size: 30px; */
+  /* font-weight: 900; */
+  position: absolute;
+  left: 820px;
+  border-radius: 50%;
+  top: 225px;
+}
+.card6:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px #BF810C;
+  background: #101820;
+}
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  color: #31473a;
+  font-weight: 900;
+  border-radius: 15px;
+}
+.card6:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  color: #ffe600;
+  font-size: 0.60rem;
+  font-weight: 900;
+  /* font-size: 0px; */
+  text-align: center;
+  transform: rotate(90deg) scale(-1);
+}
+.card6:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: 0.60rem;
+  transform: rotate(0deg);
+  color: #BF810C;
+}
+/* Murasu */
+.card7 {
+  width: var(--width);
+  height: var(--height);
+  background: #917A45;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px #917A45;
+  /* font-size: 30px; */
+  /* font-weight: 900; */
+  position: absolute;
+  left: 300px;
+  top: 400px;
+}
+.card7:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px #917A45;
+  background: #101820;
+}
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  color: #31473a;
+  font-weight: 900;
+  border-radius: 15px;
+}
+.card7:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  color: #ffe600;
+  font-size: 0.60rem;
+  font-weight: 900;
+  /* font-size: 0px; */
+  text-align: center;
+  transform: rotate(90deg) scale(-1);
+}
+.card7:hover .second-content {
+  color: #917A45;
+  opacity: 1;
+  height: 100%;
+  font-size: 0.60rem;
+  transform: rotate(0deg);
+}
+/* Kokila */
+.card8 {
+  width: var(--width);
+  height: var(--height);
+  background: #8acac7;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px #8acac7;
+  /* font-size: 30px; */
+  /* font-weight: 900; */
+  position: absolute;
+  left: 420px;
+  top: 400px;
+  border-radius: 50%;
+}
+.card8:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px #8acac7;
+  background: #101820;
+}
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  color: #31473a;
+  font-weight: 900;
+  border-radius: 15px;
+}
+.card8:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  color: #ffe600;
+  font-size: 0.60rem;
+  font-weight: 900;
+  /* font-size: 0px; */
+  text-align: center;
+  transform: rotate(90deg) scale(-1);
+}
+.card8:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: 0.60rem;
+  transform: rotate(0deg);
+  color: #8acac7;
+}
+/* Rani */
+.card9 {
+  width: var(--width);
+  height: var(--height);
+  background: #917A45;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px #917A45;
+  /* font-size: 30px; */
+  /* font-weight: 900; */
+  position: absolute;
+  left: 570px;
+  top: 400px;
+  border-radius: 50%;
+}
+.card9:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px #917A45;
+  background: #101820;
+}
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  color: #31473a;
+  font-weight: 900;
+  border-radius: 15px;
+}
+.card9:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  color: #ffe600;
+  font-size: 0.60rem;
+  font-weight: 900;
+  /* font-size: 0px; */
+  text-align: center;
+  transform: rotate(90deg) scale(-1);
+}
+.card9:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: 0.60rem;
+  transform: rotate(0deg);
+  color: #917A45;
+}
+/* Gopi */
+.card10 {
+  width: var(--width);
+  height: var(--height);
+  background: #eaabfc;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px #eaabfc;
+  /* font-size: 30px; */
+  /* font-weight: 900; */
+  position: absolute;
+  left: 690px;
+  top: 400px;
+}
+.card10:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px #eaabfc;
+  background: #101820;
+}
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  color: #31473a;
+  font-weight: 900;
+  border-radius: 15px;
+}
+.card10:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  color: #ffe600;
+  font-size: 0.60rem;
+  font-weight: 900;
+  /* font-size: 0px; */
+  text-align: center;
+  transform: rotate(90deg) scale(-1);
+}
+.card10:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: 0.60rem;
+  transform: rotate(0deg);
+  color:#eaabfc ;
+}
+/* Kathir */
+.card11 {
+  width: var(--width);
+  height: var(--height);
+  background: #8DA286;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px #8DA286;
+  /* font-size: 30px; */
+  /* font-weight: 900; */
+  position: absolute;
+  left: 225px;
+  top: 575px;
+}
+.card11:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px #8DA286;
+  background: #101820;
+}
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  color: #31473a;
+  font-weight: 900;
+  border-radius: 15px;
+}
+.card11:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  color: #ffe600;
+  font-size: 0.60rem;
+  font-weight: 900;
+  /* font-size: 0px; */
+  text-align: center;
+  transform: rotate(90deg) scale(-1);
+}
+.card11:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: 0.75rem;
+  transform: rotate(0deg);
+  color: #8DA286;
+}
+/* (kathir's wife)???? */
+.card12 {
+  width: var(--width);
+  height: var(--height);
+  background: #8d6dba;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px #8d6dba;
+  /* font-size: 30px; */
+  /* font-weight: 900; */
+  position: absolute;
+  left: 343px;
+  top: 575px;
+  border-radius: 50%;
+}
+.card12:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px #8d6dba;
+  background: #101820;
+}
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  color: #31473a;
+  font-weight: 900;
+  border-radius: 15px;
+}
+.card12:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  color: #ffe600;
+  font-size: 0.60rem;
+  font-weight: 900;
+  /* font-size: 0px; */
+  text-align: center;
+  transform: rotate(90deg) scale(-1);
+}
+.card12:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: 0.75rem;
+  transform: rotate(0deg);
+  color: #8d6dba;
+}
+/* Babu */
+.card13 {
+  width: var(--width);
+  height: var(--height);
+  background: #BD92A0;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px #BD92A0;
+  /* font-size: 30px; */
+  /* font-weight: 900; */
+  position: absolute;
+  left: 495px;
+  top: 575px;
+  /* border-radius: 50%; */
+}
+.card13:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px #BD92A0;
+  background: #101820;
+}
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  color: #31473a;
+  font-weight: 900;
+  border-radius: 15px;
+}
+.card13:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  color: #ffe600;
+  font-size: 0.60rem;
+  font-weight: 900;
+  /* font-size: 0px; */
+  text-align: center;
+  transform: rotate(90deg) scale(-1);
+}
+.card13:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: 0.75rem;
+  transform: rotate(0deg);
+  color: #BD92A0;
+}
+/* Banu */
+.card14 {
+  width: var(--width);
+  height: var(--height);
+  background: #917A45;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px #917A45;
+  /* font-size: 30px; */
+  /* font-weight: 900; */
+  position: absolute;
+  left: 700px;
+  top: 310px;
+  border-radius: 50%;
+}
+.card14:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px #917A45;
+  background: #101820;
+}
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  color: #31473a;
+  font-weight: 900;
+  border-radius: 15px;
+}
+.card14:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  color: #ffe600;
+  font-size: 0.60rem;
+  font-weight: 900;
+  /* font-size: 0px; */
+  text-align: center;
+  transform: rotate(90deg) scale(-1);
+}
+.card14:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: 0.60rem;
+  transform: rotate(0deg);
+  color: #917A45;
+}
+/* banu;s husband ??? */
+.card15 {
+  width: var(--width);
+  height: var(--height);
+  background: #7f234c;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px #7f234c;
+  /* font-size: 30px; */
+  /* font-weight: 900; */
+  position: absolute;
+  left: 820px;
+  top: 310px;
+}
+.card15:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px #7f234c;
+  background: #101820;
+}
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  color: #31473a;
+  font-weight: 900;
+  border-radius: 15px;
+}
+.card15:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  color: #ffe600;
+  font-size: 0.60rem;
+  font-weight: 900;
+  /* font-size: 0px; */
+  text-align: center;
+  transform: rotate(90deg) scale(-1);
+}
+.card15:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: 0.60rem;
+  transform: rotate(0deg);
+  color: #7f234c;
+}
+/* Tamil Raj */
+.card16 {
+  width: var(--width);
+  height: var(--height);
+  background: #884E48;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px #884E48;
+  /* font-size: 30px; */
+  /* font-weight: 900; */
+  position: absolute;
+  left: 700px;
+  top: 575px;
+}
+.card16:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px #884E48;
+  background: #101820;
+}
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  color: #31473a;
+  font-weight: 900;
+  border-radius: 15px;
+}
+.card16:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  color: #ffe600;
+  font-size: 0.60rem;
+  font-weight: 900;
+  /* font-size: 0px; */
+  text-align: center;
+  transform: rotate(90deg) scale(-1);
+}
+.card16:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: 0.75rem;
+  transform: rotate(0deg);
+  color: #884E48;
+}
+/* Vikashree */
+.card17 {
+  width: var(--width);
+  height: var(--height);
+  background: #884E48;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px #884E48;
+  /* font-size: 30px; */
+  /* font-weight: 900; */
+  position: absolute;
+  left: 820px;
+  top: 575px;
+  border-radius: 50%;
+}
+.card17:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px #884E48;
+  background: #101820;
+}
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  color: #31473a;
+  font-weight: 900;
+  border-radius: 15px;
+}
+.card17:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  color: #ffe600;
+  font-size: 0.60rem;
+  font-weight: 900;
+  /* font-size: 0px; */
+  text-align: center;
+  transform: rotate(90deg) scale(-1);
+}
+.card17:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: 0.75rem;
+  transform: rotate(0deg);
+  color: #884E48;
+}
+/* Paneer Selvam */
+.card18 {
+  width: var(--width);
+  height: var(--height);
+  background: #917A45;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px #917A45;
+  font-size: 13px;
+  /* font-weight: 900; */
+  position: absolute;
+  left: 148px;
+  top: 400px;
+}
+.card18:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px #917A45;
+  background: #101820;
+}
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  color: #31473a;
+  font-weight: 900;
+  border-radius: 15px;
+}
+.card18:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  color: #ffe600;
+  font-size: 0.60rem;
+  font-weight: 900;
+  /* font-size: 0px; */
+  text-align: center;
+  transform: rotate(90deg) scale(-1);
+}
+.card18:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: 0.60rem;
+  transform: rotate(0deg);
+  color: #917A45;
+}
+/* Mani */
+.card19 {
+  width: var(--width);
+  height: var(--height);
+  background: #26A782;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px #26A782;
+  /* font-size: 30px; */
+  /* font-weight: 900; */
+  position: absolute;
+  left: 30px;
+  top: 400px;
+  border-radius: 50%;
+}
+.card19:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px #26A782;
+  background: #101820;
+}  
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  color: #31473a;
+  font-weight: 900;
+  border-radius: 15px;
+} 
+.card19:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  color: #ffe600;
+  font-size: .75rem;
+  font-weight: 900;
+  /* font-size: 0px; */
+  text-align: center;
+  transform: rotate(90deg) scale(-1);
+}  
+.card19:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: .60rem;
+  transform: rotate(0deg);
+  color: #26A782;
+}  
+/* Saravanan */
+.card20 {
+  width: var(--width);
+  height: var(--height);
+  background: #5B9063;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px #5B9063;
+  /* font-size: 30px; */
+  /* font-weight: 900; */
+  position: absolute;
+  left: 90px;
+  top: 760px;
+}
+
+.card20:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px #5B9063;
+  background: #101820;
+}  
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  color: #31473a;
+  font-weight: 900;
+  border-radius: 15px;
+} 
+.card20:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  color: #ffe600;
+  font-size: .75rem;
+  font-weight: 900;
+  /* font-size: 0px; */
+  text-align: center;
+  transform: rotate(90deg) scale(-1);
+}  
+.card20:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: .60rem;
+  transform: rotate(0deg);
+  color: #5B9063;
+}  
+/* Jothi */
+.card21 {
+  width: var(--width);
+  height: var(--height);
+  background: #c8165d;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px #c8165d;
+  /* font-size: 30px; */
+  /* font-weight: 900; */
+  position: absolute;
+  left: 208px;
+  top: 760px;
+  border-radius: 50%;
+}
+.card21:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px #c8165d;
+  background: #101820;
+}  
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  color: #31473a;
+  font-weight: 900;
+  border-radius: 15px;
+} 
+.card21:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  color: #ffe600;
+  font-size: .75rem;
+  font-weight: 900;
+  /* font-size: 0px; */
+  text-align: center;
+  transform: rotate(90deg) scale(-1);
+}  
+.card21:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: .75rem;
+  transform: rotate(0deg);
+  color: #c8165d;
+}  
+/* Abi */
+.card22 {
+  width: var(--width);
+  height: var(--height);
+  background: #915360;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px #915360;
+  /* font-size: 30px; */
+  /* font-weight: 900; */
+  position: absolute;
+  left: 87px;
+  top: 930px;
+  border-radius: 50%;
+}
+.card22:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px #915360;
+  background: #101820;
+}  
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  color: #31473a;
+  font-weight: 900;
+  border-radius: 15px;
+} 
+.card22:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  color: #ffe600;
+  font-size: .75rem;
+  font-weight: 900;
+  /* font-size: 0px; */
+  text-align: center;
+  transform: rotate(90deg) scale(-1);
+}  
+.card22:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: .75rem;
+  transform: rotate(0deg);
+  color: #915360;
+}  
+/* thaksita */
+.card23 {
+  width: var(--width);
+  height: var(--height);
+  background: #915360;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px #915360;
+  /* font-size: 30px; */
+  /* font-weight: 900; */
+  position: absolute;
+  left: 208px;
+  top: 930px;
+  border-radius: 50%;
+}
+.card23:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px #915360;
+  background: #101820;
+}  
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  color: #31473a;
+  font-weight: 900;
+  border-radius: 15px;
+} 
+.card23:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  color: #ffe600;
+  font-size: .75rem;
+  font-weight: 900;
+  /* font-size: 0px; */
+  text-align: center;
+  transform: rotate(90deg) scale(-1);
+}  
+.card23:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: .75rem;
+  transform: rotate(0deg);
+  color: #915360;
+}  
+/* Kani Mozhi */
+.card24 {
+  width: var(--width);
+  height: var(--height);
+  background: #5B9063;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px #5B9063;
+  /* font-size: 30px; */
+  /* font-weight: 900; */
+  position: absolute;
+  left: 648px;
+  top: 760px;
+  border-radius: 50%;
+}
+.card24:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px #5B9063;
+  background: #101820;
+}  
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  color: #31473a;
+  font-weight: 900;
+  border-radius: 15px;
+} 
+.card24:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  color: #ffe600;
+  font-size: .75rem;
+  font-weight: 900;
+  /* font-size: 0px; */
+  text-align: center;
+  transform: rotate(90deg) scale(-1);
+}  
+.card24:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: .60rem;
+  transform: rotate(0deg);
+  color: #5B9063;
+}  
+/* Sekar */
+.card25 {
+  width: var(--width);
+  height: var(--height);
+  background: #df8b2e;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px #df8b2e;
+  /* font-size: 30px; */
+  /* font-weight: 900; */
+  position: absolute;
+  left: 768px;
+  top: 760px;
+}
+.card25:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px #df8b2e;
+  background: #101820;
+}  
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  color: #31473a;
+  font-weight: 900;
+  border-radius: 15px;
+} 
+.card25:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  color: #ffe600;
+  font-size: .75rem;
+  font-weight: 900;
+  /* font-size: 0px; */
+  text-align: center;
+  transform: rotate(90deg) scale(-1);
+}  
+.card25:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: .75rem;
+  transform: rotate(0deg);
+  color: #df8b2e;
+}  
+/* Pavithra */
+.card26 {
+  width: var(--width);
+  height: var(--height);
+  background: #9D8D48;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px #9D8D48;
+  /* font-size: 30px; */
+  /* font-weight: 900; */
+  position: absolute;
+  left: 707px;
+  top: 935px;
+  border-radius: 50%;
+}
+.card26:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px #9D8D48;
+  background: #101820;
+}  
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  color: #31473a;
+  font-weight: 900;
+  border-radius: 15px;
+} 
+.card26:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  color: #ffe600;
+  font-size: .75rem;
+  font-weight: 900;
+  /* font-size: 0px; */
+  text-align: center;
+  transform: rotate(90deg) scale(-1);
+}  
+.card26:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: .75rem;
+  transform: rotate(0deg);
+  color: #9D8D48;
+}  
+/* Velusamy */
+.card27 {
+  width: var(--width);
+  height: var(--height);
+  background: #26A782;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px #26A782;
+  /* font-size: 30px; */
+  /* font-weight: 900; */
+  position: absolute;
+  left: 148px;
+  top: 170px;
+}
+.card27:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px #26A782;
+  background: #101820;
+}  
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  color: #31473a;
+  font-weight: 900;
+  border-radius: 15px;
+} 
+.card27:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  color: #ffe600;
+  font-size: .75rem;
+  font-weight: 900;
+  /* font-size: 0px; */
+  text-align: center;
+  transform: rotate(90deg) scale(-1);
+}  
+.card27:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: .75rem;
+  transform: rotate(0deg);
+  color: #26A782;
+}  
+/* Latha */
+.card28 {
+  width: var(--width);
+  height: var(--height);
+  background: #b5ec7a;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px #b5ec7a;
+  /* font-size: 30px; */
+  /* font-weight: 900; */
+  position: absolute;
+  left: 265px;
+  top: 170px;
+  border-radius: 50%;
+}
+.card28:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px #b5ec7a;
+  background: #101820;
+}  
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  color: #31473a;
+  font-weight: 900;
+  border-radius: 15px;
+} 
+.card28:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  color: #ffe600;
+  font-size: .75rem;
+  font-weight: 900;
+  /* font-size: 0px; */
+  text-align: center;
+  transform: rotate(90deg) scale(-1);
+}  
+.card28:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: .75rem;
+  transform: rotate(0deg);
+  color: #b5ec7a;
+}
+
+/* Siva */
+.card29 {
+  width: var(--width);
+  height: var(--height);
+  background: #6DC97E;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px #6DC97E;
+  /* font-size: 30px; */
+  /* font-weight: 900; */
+  position: absolute;
+  left: 150px;
+  top: 250px;
+}
+.card29:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px #6DC97E;
+  background: #101820;
+}  
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  color: #31473a;
+  font-weight: 900;
+  border-radius: 15px;
+} 
+.card29:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  color: #ffe600;
+  font-size: .75rem;
+  font-weight: 900;
+  /* font-size: 0px; */
+  text-align: center;
+  transform: rotate(90deg) scale(-1);
+}  
+.card29:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: .75rem;
+  transform: rotate(0deg);
+  color: #6DC97E;
+}  
+/* Kokila */
+.card30 {
+  width: var(--width);
+  height: var(--height);
+  background: #6DC97E;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px #6DC97E;
+  /* font-size: 30px; */
+  /* font-weight: 900; */
+  position: absolute;
+  left: 265px;
+  top: 250px;
+  border-radius: 50%;
+}
+.card30:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px #6DC97E;
+  background: #101820;
+}  
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  color: #31473a;
+  font-weight: 900;
+  border-radius: 15px;
+} 
+.card30:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  color: #ffe600;
+  font-size: .75rem;
+  font-weight: 900;
+  /* font-size: 0px; */
+  text-align: center;
+  transform: rotate(90deg) scale(-1);
+}  
+.card30:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: .75rem;
+  transform: rotate(0deg);
+  color: #6DC97E;
+}  
+/* ???(Mani(Palanimal)'s father) */
+.card31 {
+  width: var(--width);
+  height: var(--height);
+  background: #4752f7;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px #4752f7;
+  /* font-size: 30px; */
+  /* font-weight: 900; */
+  position: absolute;
+  left: 150px;
+  top: 50px;
+}
+.card31:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px #4752f7;
+  background: #101820;
+}  
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  font-weight: 900;
+  border-radius: 15px;
+} 
+.card31:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  color: #ffe600;
+  font-size: .75rem;
+  font-weight: 900;
+  /* font-size: 0px; */
+  text-align: center;
+  transform: rotate(90deg) scale(-1);
+}  
+.card31:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: .60rem;
+  transform: rotate(0deg);
+  color: #4752f7;
+}  
+/* ?????'s wife1 */
+.card32 {
+  width: var(--width);
+  height: var(--height);
+  background: #05fc0e;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px #05fc0e;
+  position: absolute;
+  left: 30px;
+  top: 50px;
+  border-radius: 50%;
+}
+.card32:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px #05fc0e;
+  background: #101820;
+  /* color: #05fc0e; */
+}  
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  color: #05fc0e;
+  font-weight: 900;
+  border-radius: 15px;
+} 
+.card32:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  color: #05fc0e;
+  font-size: .75rem;
+  font-weight: 900;
+  /* font-size: 0px; */
+  text-align: center;
+  transform: rotate(90deg) scale(-1);
+}  
+.card32:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: .60rem;
+  transform: rotate(0deg);
+  border-radius: 50%;
+  color: #05fc0e;
+}  
+/* Ponghiya */
+.card33 {
+  width: var(--width);
+  height: var(--height);
+  background: #9a96c1;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px #9a96c1;
+  /* font-size: 30px; */
+  /* font-weight: 900; */
+  position: absolute;
+  left: 270px;
+  top: 50px;
+  border-radius: 50%;
+}
+.card33:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px #9a96c1;
+  background: #101820;
+}  
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  color: #31473a;
+  font-weight: 900;
+  border-radius: 15px;
+} 
+.card33:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  color: #ffe600;
+  font-size: .75rem;
+  font-weight: 900;
+  /* font-size: 0px; */
+  text-align: center;
+  transform: rotate(90deg) scale(-1);
+}  
+.card33:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: .60rem;
+  transform: rotate(0deg);
+  color: #9a96c1;
+}  
+/* Kuppusamy */
+.card34 {
+  width: var(--width);
+  height: var(--height);
+  background: #7074DC;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px #7074DC;
+  font-size: 0.90rem;
+  /* font-weight: 900; */
+  position: absolute;
+  left: 410px;
+  top: 225px;
+}
+.card34:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px #7074DC;
+  background: #101820;
+}  
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  color: #31473a;
+  font-weight: 900;
+  border-radius: 15px;
+} 
+.card34:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  color: #ffe600;
+  font-size: .75rem;
+  font-weight: 900;
+  /* font-size: 0px; */
+  text-align: center;
+  transform: rotate(90deg) scale(-1);
+}  
+.card34:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: .75rem;
+  transform: rotate(0deg);
+  color: #7074DC;
+}  
+
+/* Connecting lines */
+/* wife1 + w1 hus */
+.line1
+{
+  width: 20px;
+  height: 5px;
+  background-color: #05fc0e;
+  border-radius: 30px;
+  position: absolute;
+  left: 110px;
+  top: 65px;
+}
+.line22
+{
+  width: 20px;
+  height: 5px;
+  background-color: #4752f7;
+  border-radius: 30px;
+  position: absolute;
+  left: 130px;
+  top: 65px;
+}
+/* wife1 D */
+.line14
+{
+  width: 80px;
+  height: 5px;
+  background-color: #26A782;
+  border-radius: 30px;
+  position: absolute;
+  left: 90px;
+  top: 105px;
+  transform: rotate(90deg);
+}
+.joint1
+{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  position: absolute;
+  top: 65px;
+  left: 127px;
+}
+
+/* wife1 D2 */
+.line15
+{
+  width: 120px;
+  height: 5px;
+  background-color: #26A782;
+  border-radius: 30px;
+  position: absolute;
+  left: 70px;
+  top: 145px;
+}
+/* Velusamy line */
+.line16
+{
+  width: 25px;
+  height: 5px;
+  background-color: #26A782;
+  border-radius: 30px;
+  position: absolute;
+  left: 175px;
+  top:156px;
+  transform: rotate(90deg);
+}
+/* Mani + paneer selvam  */
+.line27
+{
+  width: 255px;
+  height: 5px;
+  background-color: #26A782;
+  border-radius: 30px;
+  position: absolute;
+  left: -57px;
+  top:270px;
+  transform: rotate(90deg);
+}
+/* velusamy + latha */
+.line17
+{
+  width: 20px;
+  height: 5px;
+  background-color: #26A782;
+  border-radius: 30px;
+  position: absolute;
+  left: 227px;
+  top: 185px;
+}
+.line26
+{
+  width: 20px;
+  height: 5px;
+  background-color: #b5ec7a;
+  border-radius: 30px;
+  position: absolute;
+  left: 247px;
+  top: 185px;
+}
+.joint5
+{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  position: absolute;
+  top: 185px;
+  left: 245px;
+}
+/* siva line */
+.line63
+{
+  width: 80px;
+  height: 5px;
+  background-color: #6DC97E;
+  border-radius: 30px;
+  position: absolute;
+  left: 208px;
+  top: 225px;
+  transform: rotate(90deg);
+}
+.line64
+{
+  width: 40px;
+  height: 5px;
+  background-color: #6DC97E;
+  border-radius: 30px;
+  position: absolute;
+  left: 228px;
+  top: 265px;
+}
+/* w1 hus + ponghiya */
+.line2
+{
+  width: 20px;
+  height: 5px;
+  background-color: #4752f7;
+  border-radius: 30px;
+  position: absolute;
+  left: 230px;
+  top: 65px;
+}
+.line23
+{
+  width: 20px;
+  height: 5px;
+  background-color: #9a96c1;
+  border-radius: 30px;
+  position: absolute;
+  left: 250px;
+  top: 65px;
+}
+.joint2
+{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  position: absolute;
+  top: 65px;
+  left: 247px;
+}
+/* ponghiya D */
+.line5
+{
+  width: 80px;
+  height: 5px;
+  background-color: #7074DC;
+  border-radius: 30px;
+  position: absolute;
+  left: 210px;
+  top: 105px;
+  transform: rotate(90deg);
+}
+/* ponghiya D1 */
+.line19
+{
+  width: 205px;
+  height: 5px;
+  background-color: #7074DC;
+  border-radius: 30px;
+  position: absolute;
+  left: 248px;
+  top: 145px;
+}
+/* ponghiya D2 (Kuppusamy line)*/
+.line20
+{
+  width: 80px;
+  height: 5px;
+  background-color: #7074DC;
+  border-radius: 30px;
+  position: absolute;
+  left: 411px;
+  top: 185px;
+  transform: rotate(90deg);
+}
+/* Ayyaya + palanimal */
+.line3
+{
+  width: 20px;
+  height: 5px;
+  background-color: #945482;
+  border-radius: 30px;
+  position: absolute;
+  left: 510px;
+  top: 65px;
+}
+.line24
+{
+  width: 20px;
+  height: 5px;
+  background-color: #8fa009;
+  border-radius: 30px;
+  position: absolute;
+  left: 530px;
+  top: 65px;
+}
+.joint3
+{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  position: absolute;
+  top: 65px;
+  left: 527px;
+}
+/* ayyayu D */
+.line18
+{
+  width: 260px;
+  height: 5px;
+  background-color: #917A45;
+  border-radius: 30px;
+  position: absolute;
+  left: 400px;
+  top: 195px;
+  transform: rotate(90deg);
+}
+/* Ayyayu D2 */
+.line21
+{
+  width: 515px;
+  height: 5px;
+  background-color: #917A45;
+  border-radius: 30px;
+  position: absolute;
+  left: 185px;
+  top: 325px;
+}
+/* murasu line */
+.line38
+{
+  width: 75px;
+  height: 5px;
+  background-color: #917A45;
+  border-radius: 30px;
+  position: absolute;
+  left: 304px;
+  top: 360.5px;
+  transform: rotate(90deg);
+}
+/* rani line */
+.line39
+{
+  width: 75px;
+  height: 5px;
+  background-color: #917A45;
+  border-radius: 30px;
+  position: absolute;
+  left: 572px;
+  top: 360.5px;
+  transform: rotate(90deg);
+}
+/* Ayyayu D2 */
+.line28
+{
+  width: 75px;
+  height: 5px;
+  background-color: #917A45;
+  border-radius: 30px;
+  position: absolute;
+  left: 148px;
+  top: 360.5px;
+  transform: rotate(90deg);
+}
+
+/* Sivagamy + her hus */
+.line4
+{
+  width: 20px;
+  height: 5px;
+  background-color: #8fa009;
+  border-radius: 30px;
+  position: absolute;
+  left: 780px;
+  top: 65px;
+}
+.line25
+{
+  width: 20px;
+  height: 5px;
+  background-color: #f0620f;
+  border-radius: 30px;
+  position: absolute;
+  left: 800px;
+  top: 65px;
+}
+.joint4
+{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  position: absolute;
+  top: 65px;
+  left: 797px;
+}
+
+/* sivagamy D1 */
+.line6
+{
+  width: 80px;
+  height: 5px;
+  background-color: #BF810C;
+  border-radius: 30px;
+  position: absolute;
+  left: 760px;
+  top: 105px;
+  transform: rotate(90deg);
+}
+/* sivagamy D2 */
+.line7
+{
+  width: 120px;
+  height: 5px;
+  background-color: #BF810C;
+  border-radius: 30px;
+  position: absolute;
+  left: 740px;
+  top: 145px;
+}
+/* kanaga line */
+.line8
+{
+  width: 80px;
+  height: 5px;
+  background-color: #BF810C;
+  border-radius: 30px;
+  position: absolute;
+  left: 820px;
+  top: 183px;
+  transform: rotate(90deg);
+}
+/* Ramesh line */
+.line9
+{
+  width: 80px;
+  height: 5px;
+  background-color: #BF810C;
+  border-radius: 30px;
+  position: absolute;
+  left: 700px;
+  top: 183px;
+  transform: rotate(90deg);
+}
+/* Sivagamy & palanimal */
+.line10
+{
+  width: 20px;
+  height: 5px;
+  background-color: #8fa009;
+  border-radius: 30px;
+  position: absolute;
+  left: 730px;
+  top: 40px;
+  transform: rotate(90deg);
+}
+.line11
+{
+  width: 20px;
+  height: 5px;
+  background-color: #8fa009;
+  border-radius: 30px;
+  position: absolute;
+  left: 580px;
+  top: 40px;
+  transform: rotate(90deg);
+}
+.line12
+{
+  width: 155.5px;
+  height: 5px;
+  background-color: #8fa009;
+  border-radius: 30px;
+  position: absolute;
+  left: 587px;
+  top: 30px;
+}
+.line13
+{
+  width: 20px;
+  height: 5px;
+  background-color: #8fa009;
+  border-radius: 30px;
+  position: absolute;
+  left: 656px;
+  top: 20px;
+  transform: rotate(90deg);
+}
+
+/* Mani + paneerselvam */
+.line29
+{
+  width: 20px;
+  height: 5px;
+  background-color: #26A782;
+  border-radius: 30px;
+  position: absolute;
+  left: 110px;
+  top: 416px;
+}
+.line30
+{
+  width: 20px;
+  height: 5px;
+  background-color: #917A45;
+  border-radius: 30px;
+  position: absolute;
+  left: 130px;
+  top: 416px;
+}
+.joint6
+{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  position: absolute;
+  top: 416px;
+  left: 127px;
+}
+/* saravanan line */
+.line31{
+  width: 345px;
+  height: 5px;
+  background-color: #5B9063;
+  border-radius: 30px;
+  position: absolute;
+  left: -43px;
+  top: 587px;
+  transform: rotate(90deg);
+}
+.line52
+{
+  width: 560px;
+  height: 5px;
+  background-color: #5B9063;
+  border-radius: 30px;
+  position: absolute;
+  left: 130px;
+  top: 680px;
+  /* transform: rotate(90deg);   */
+}
+/* kani line */
+.line55
+{
+  width: 80px;
+  height: 5px;
+  background-color: #5B9063;
+  border-radius: 30px;
+  position: absolute;
+  left: 647px;
+  top: 720px;
+  transform: rotate(90deg);
+}
+/* kani + sekar */
+.line56
+{
+  width: 20px;
+  height: 5px;
+  background-color: #5B9063;
+  border-radius: 30px;
+  position: absolute;
+  left: 728px;
+  top: 775px; 
+}
+.line57
+{
+  width: 20px;
+  height: 5px;
+  background-color: #df8b2e;
+  border-radius: 30px;
+  position: absolute;
+  left: 748px;
+  top: 775px; 
+}
+.joint12
+{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  position: absolute;
+  top: 775px;
+  left: 745px;
+}
+/* pavithra line */
+.line59
+{
+  width: 160px;
+  height: 5px;
+  background-color: #9D8D48;
+  border-radius: 30px;
+  position: absolute;
+  left: 667px;
+  top: 855px;
+  transform: rotate(90deg);
+}
+/* saravana + jothi */
+.line53
+{
+  width: 20px;
+  height: 5px;
+  background-color: #5B9063;
+  border-radius: 30px;
+  position: absolute;
+  left: 170px;
+  top: 775px; 
+}
+.line54
+{
+  width: 20px;
+  height: 5px;
+  background-color: #c8165d;
+  border-radius: 30px;
+  position: absolute;
+  left: 190px;
+  top: 775px; 
+}
+.joint11
+{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  position: absolute;
+  top: 775px;
+  left: 188px; 
+}
+/* abi line */
+.line58
+{
+  width: 80px;
+  height: 5px;
+  background-color: #915360;
+  border-radius: 30px;
+  position: absolute;
+  left: 151px;
+  top: 813px; 
+  transform: rotate(90deg);
+}
+.line60
+{
+  width: 120px;
+  height: 5px;
+  background-color: #915360;
+  border-radius: 30px;
+  position: absolute;
+  left: 130px;
+  top: 852px; 
+}
+.line61
+{
+  width: 80px;
+  height: 5px;
+  background-color: #915360;
+  border-radius: 30px;
+  position: absolute;
+  left: 90px;
+  top: 890px; 
+  transform: rotate(90deg);
+}
+.line62
+{
+  width: 80px;
+  height: 5px;
+  background-color: #915360;
+  border-radius: 30px;
+  position: absolute;
+  left: 210px;
+  top: 890px; 
+  transform: rotate(90deg);
+}
+/* Murasu + kokila */
+.line32
+{
+  width: 20px;
+  height: 5px;
+  background-color: #917A45;
+  border-radius: 30px;
+  position: absolute;
+  left: 380px;
+  top: 416px; 
+}
+.line33
+{
+  width: 20px;
+  height: 5px;
+  background-color: #8acac7;
+  border-radius: 30px;
+  position: absolute;
+  left: 400px;
+  top: 416px; 
+}
+.joint7{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  position: absolute;
+  top: 416px;
+  left: 397px; 
+}
+/* kathir line */
+.line34
+{
+  width: 80px;
+  height: 5px;
+  background-color: #8DA286;
+  border-radius: 30px;
+  position: absolute;
+  left: 360px;
+  top: 455px;
+  transform: rotate(90deg);
+}
+/* kathir d2 */
+.line45
+{
+  width: 140px;
+  height: 5px;
+  background-color: #8DA286;
+  border-radius: 30px;
+  position: absolute;
+  left: 262px;
+  top: 495px;
+  /* transform: rotate(90deg); */
+}
+/* kathir d3 */
+.line46
+{
+  width: 80px;
+  height: 5px;
+  background-color: #8DA286;
+  border-radius: 30px;
+  position: absolute;
+  left: 224px;
+  top: 533px;
+  transform: rotate(90deg);
+}
+/* Rani + Gopi */
+.line35
+{
+  width: 20px;
+  height: 5px;
+  background-color: #917A45;
+  border-radius: 30px;
+  position: absolute;
+  left: 650px;
+  top: 416px; 
+}
+.line36
+{
+  width: 20px;
+  height: 5px;
+  background-color: #eaabfc;
+  border-radius: 30px;
+  position: absolute;
+  left: 670px;
+  top: 416px; 
+}
+.joint8{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  position: absolute;
+  top: 416px;
+  left: 667px; 
+}
+/* babu line */
+.line37
+{
+  width: 80px;
+  height: 5px;
+  background-color: #BD92A0;
+  border-radius: 30px;
+  position: absolute;
+  left: 630px;
+  top: 455px;
+  transform: rotate(90deg);
+}
+.line47
+{
+  width: 140px;
+  height: 5px;
+  background-color: #BD92A0;
+  border-radius: 30px;
+  position: absolute;
+  left: 532px;
+  top: 493px;
+  /* transform: rotate(90deg); */
+}
+.line48
+{
+  width: 83px;
+  height: 5px;
+  background-color: #BD92A0;
+  border-radius: 30px;
+  position: absolute;
+  left: 493px;
+  top: 535px;
+  transform: rotate(90deg);
+}
+/* banu + husband */
+.line40
+{
+  width: 20px;
+  height: 5px;
+  background-color: #917A45;
+  border-radius: 30px;
+  position: absolute;
+  left: 780px;
+  top: 325px;  
+}
+.line41
+{
+  width: 20px;
+  height: 5px;
+  background-color: rgb(127,35,76);
+  border-radius: 30px;
+  position: absolute;
+  left: 800px;
+  top: 325px;  
+}
+.joint9{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  position: absolute;
+  top: 325px;
+  left: 797px; 
+}
+/* tamilraj line */
+.line42
+{
+  width: 170px;
+  height: 5px;
+  background-color: #884E48;
+  border-radius: 30px;
+  position: absolute;
+  left: 715px;
+  top: 410px;
+  transform: rotate(90deg);
+}
+.line49
+{
+  width: 120px;
+  height: 5px;
+  background-color: #884E48;
+  border-radius: 30px;
+  position: absolute;
+  left: 740px;
+  top: 495px;
+  /* transform: rotate(90deg); */
+}
+/* tamilraj line */
+.line50
+{
+  width: 80px;
+  height: 5px;
+  background-color: #884E48;
+  border-radius: 30px;
+  position: absolute;
+  left: 702px;
+  top: 534px;
+  transform: rotate(90deg);
+}
+/* vikashree line */
+.line51
+{
+  width: 80px;
+  height: 5px;
+  background-color: #884E48;
+  border-radius: 30px;
+  position: absolute;
+  left: 820px;
+  top: 534px;
+  transform: rotate(90deg);
+}
+/* kathir + wife */
+.line44{
+  width: 20px;
+  height: 5px;
+  background-color: #8d6dba;
+  border-radius: 30px;
+  position: absolute;
+  left: 325px;
+  top: 590px;   
+}
+.line43{
+  width: 20px;
+  height: 5px;
+  background-color: #8DA286;
+  border-radius: 30px;
+  position: absolute;
+  left: 305px;
+  top: 590px;   
+}
+.joint10{
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  position: absolute;
+  top: 590px;
+  left: 323px; 
+}

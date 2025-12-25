@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FORM</title>
+    <link rel="stylesheet" href="CSS/form_sign_up.css">
+</head>
+<body>
+    <div class="regform">
+        <h3>Sign Up</h3>
+        <form action="Box.html" method="get" enctype="multipart/form-data">
+            <div class="input">
+                <label class="i1" for="username" required>User Name:</label>
+                <input class="i2" type="text" id="username" name="username" required>
+            </div>
+            <div class="input">
+                <label class="i1" for="email" required>E-mail:</label>
+                <input class="i2" type="email" id="email" name="email" required>
+            </div>
+           <div class="input">
+            <label class="i1" for="password" required>Password:</label>
+            <input class="i2" type="password" id="password" name="password" required>
+           </div>
+           <div class="radio">
+            <input type="radio" name="gender" id="male" required>
+            <label for="male"></label>Male</label>
+            <input type="radio" name="gender" id="Female" required>
+            <label for="female"></label>Female</label >
+           </div>
+           <div class="button">
+            <button type="submit">Register</button>
+           </div>
+        </form>  
+    </div>
+</body>
+</html>

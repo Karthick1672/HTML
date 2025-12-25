@@ -1,0 +1,76 @@
+#h1
+{
+    width: 600px;
+    background-color: yellow;
+    padding: 9px;
+    color: red;
+    border: 2px solid #ff0000;
+    border-radius: 10px;
+    box-shadow: 6px 5px 2px #ff0000;
+    position: relative;
+    left: 312.5px;
+    text-align: center;
+}
+.asura
+{
+    text-align: center;
+    color: aqua;
+    background: black;
+    border: 2px solid rgb(243, 6, 6);
+    width: 600px;
+    padding: 9px;
+    border-radius: 10px;/*curve for borders*/
+    text-shadow: 6px 5px 2px white;
+}
+    
+#asura
+{
+    text-align: justify;
+    background: antiquewhite;
+    text-indent: 50px; /*space os the first letter in a paragraph*/
+    line-height: 130%;/*space btween the line*/
+    padding: 9px;/*b/w content & border*/
+    margin: 5px solid orange;
+    width: 600px;
+    border: 2px solid black;
+    border-radius: 10px;/*curve for borders*/
+    box-shadow: 10px 10px 10px grey;
+}
+/*First letter of a paragraph*/
+p::first-letter
+{
+    font: 1.5em times new roman;/*size & style of first letter*/
+    font-style: italic;
+}
+
+.black-Leg
+{
+    
+    text-align: center;
+    color: aqua;
+    background: black;
+    border: 2px solid rgb(243, 6, 6);
+    width: 600px;
+    padding: 9px;
+    border-radius: 10px;/*curve for borders*/
+    text-shadow: 6px 5px 2px rgb(255, 253, 253);
+    position: relative;/*to alter the position of the box*/
+    left: 625px;
+    bottom: 307px;
+}
+#black-Leg
+{
+    text-align: justify;
+    background: antiquewhite;
+    text-indent: 50px; /*space os the first letter in a paragraph*/
+    line-height: 130%;/*space btween the line*/
+    padding: 9px;/*b/w content & border*/
+    margin: 5px solid orange;
+    width: 600px;
+    border: 2px solid black;
+    border-radius: 10px;/*curve for borders*/
+    box-shadow: 10px 10px 10px grey;
+    position: relative;
+    left: 625px;
+    bottom: 307px;
+}

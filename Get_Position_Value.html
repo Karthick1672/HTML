@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get_Position_value</title>
+
+    <script>
+        function up_down(element)
+        {
+            var num = element.value;
+            // console.log(num);
+            document.getElementById('emoji').style.top=""+num+"px";
+        }
+        function left_right(e)
+        {
+            var num = e.value;
+            document.getElementById('emoji').style.left=num*10+"px";
+        }
+        // var num = 0;
+        // var va = 0;
+        // const devil = document.getElementById('emoji');
+        // while(true)
+        // {
+        //     // num=num+1;
+        //     // console.log(num);
+        //     // if(num==100)
+        //     // {
+        //     //     break;
+        //     // }
+        //     // alert("hi")
+        //     // document.getElementById('emoji').style.left =num*10+"px";
+        //     // devil.style.left=""+num+"px";
+        //     setTimeout(()=>
+        //     {
+        //         num=num+1;
+        //         console.log(num);
+        //         if(num==100)
+        //             {
+        //                 va = 1;
+        //             }
+        //     },100);
+
+        //     if(va==1)
+        //     {
+        //         break;
+        //     }
+        // }
+    </script>
+
+</head>
+<body>
+    <!-- https://www.w3schools.com/charsets/ref_emoji_smileys.asp -->
+    <!-- for emoji's -->
+    <span id="emoji" style="font-size:xxx-large;position: fixed;top: 0px;left: 0px;">&#128520;</span>
+    <input type="number" placeholder="up & down" onchange="up_down(this)">
+    <input type="number" placeholder="left & right" onchange="left_right(this)">
+
+    
+
+</body>
+</html>

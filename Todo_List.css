@@ -1,0 +1,95 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #212121;
+}
+.heading
+{
+    color: aliceblue;
+    margin-bottom: 10px;
+}
+.strike:hover
+{
+    color: #00ff00;
+    cursor: pointer;
+    font-size: 20px;
+}
+.dele:hover
+{
+    color: #ff0000;
+    cursor: pointer;
+    font-size: 20px;
+}
+#wrap
+{
+    width: 500px;
+    height: 500px;
+    background: rgb(238, 151, 89);
+    border: 1.5px solid white;
+    border-radius: 15px;
+}
+h1
+{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input
+{
+    margin-left: 40px;
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    /* For input border line */
+    outline: none;
+    padding: 10px;
+}
+button
+{
+    width: 60px;
+    height: 40px;
+    font-size: 20px;
+    margin-left: 20px;
+    background: linear-gradient(to right, rgb(98, 139, 242),rgb(245, 84, 111));
+    border-radius: 10px;
+    cursor: pointer;
+}
+button:hover{
+    box-shadow: 0 0 10px rgb(219, 201, 221),
+        0 0 20px rgb(238, 215, 219),
+        0 0 30px rgb(238, 215, 219),
+        0 0 40px white;
+    color: white;
+    border: 1.5px solid white;
+    background: #212121;
+}
+#todoList
+{
+    width: 490px;
+    height: 330px;
+    margin-top: 20px;
+    padding-left: 40px;
+    font-size: 20px;
+    line-height: 25px;
+    /* background-color: aquamarine; */
+}
+p{
+    cursor: pointer;
+}
+p:hover{
+    color: aliceblue;
+}

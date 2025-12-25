@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: comic;
+    background-color: #303841;
+}
+
+h3{
+    font-size: 2.3rem;
+    font-weight: 200;
+    font-style: italic;
+    color: #fff200;
+    text-align: center;
+}
+
+.game
+{
+    display: grid;
+    margin: 30px auto;
+    /* no. of cards and their size */
+    grid-template-columns: repeat(5,120px);
+    /* cards gap */
+    grid-row-gap: 2em;  
+    align-items: center;
+    justify-content: center;
+
+}
+
+#gameboard div{
+    height: 80px;
+    width: 80px;
+    border: 2px solid #992c50;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: black;
+    background-color: #d6e6f2;
+}
+
+/* background of the cards */
+.cardbg
+{
+    background-color: #fb0707;
+    opacity: 1;
+    background-image:  linear-gradient(135deg, #d6e6f2 25%, transparent 25%), linear-gradient(225deg, #d6e6f2 25%, transparent 25%), linear-gradient(45deg, #d6e6f2 25%, transparent 25%), linear-gradient(315deg, #d6e6f2 25%, #0a884b 25%);
+    background-position:  10px 0, 10px 0, 0 0, 0 0;
+    background-size: 10px 10px;
+    background-repeat: repeat;
+}
+
+#gameboard div:hover
+{
+    cursor: pointer;
+    border: 2.5px solid black;
+}
+
+.won
+{
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    height: 450px;
+    align-items: center;
+    color: aquamarine;
+    width: 500px;
+    margin: 0px auto;
+}
+
+h2
+{
+    text-align: center;
+    position: relative;
+    right: 10px;
+    top: -15px;
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+#score
+{
+    color: white;
+}

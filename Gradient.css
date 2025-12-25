@@ -1,0 +1,139 @@
+.big_box
+{
+    background-color: bisque;
+    min-height:400px; 
+    display: flex;
+
+    flex-wrap: wrap;
+
+    /* row alignment(main axis) -> justify-content */
+    justify-content: center;
+    /*space-around -> create equal space between the box(start from space to ending also space) */
+     /*space-between -> create equal space between the box(start to end) */
+    /*flex-start->starting point*/
+    /*flex-end->ending point*/
+    /* center -> center point */
+
+    /* column axis(cross axis) -> */
+    align-items: center;
+}
+.box
+{
+    width: 150px;
+    height: 200px;
+    border: 2px solid white;
+    background-color: blue;
+}
+#box2
+{
+    /* flex-shrink: 0; => to shrink the box */
+    flex-grow: 2;
+    flex-basis: 0;
+}
+#box3
+{
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+
+
+.container
+{
+    display: flex;
+    /* flex-direction: column; */
+    position: relative;
+    top: 40px;
+}
+.one
+{
+    background-color: aquamarine;
+    flex: 1;
+    padding: 10px;
+    order: 2;
+}
+.two
+{
+    background-color: antiquewhite;
+    flex: 2;
+    padding: 10px;
+    order: 3;
+}
+.three
+{
+    background-color: rgb(187, 131, 239);
+    flex: 2;
+    padding: 10px;
+    order: 1;
+}
+/*
+@media (min-width:375px) 
+{
+    .container p
+    {
+        width: 30%;
+        float: right;
+        padding: 10px;   
+    }
+}
+*/
+.box0
+{
+    position: relative;
+    top: 60px;
+    width: 400px;
+    height: 300px;
+    background-color: blue;
+    background: linear-gradient(45deg,violet,indigo,blue,green,yellow,orange,red);
+}
+.box1
+{
+    position: relative;
+    top: 50px;
+    width: 400px;
+    height: 300px;
+    background-color: blue;
+    background: linear-gradient(to right bottom,violet,indigo,blue,green,yellow,orange,red);
+}
+.box2
+{
+    position: relative;
+    top: 40px;
+    width: 400px;
+    height: 300px;
+    background-color: blue;
+    background: linear-gradient(to right, red 50%,red,yellow 30%,yellow);
+}
+.box3
+{
+    position: relative;
+    top: 30px;
+    width: 400px;
+    height: 300px;
+    background-color: blue;
+    background: radial-gradient(red 30%,red,yellow 30%,yellow);
+}
+.box4
+{
+    position: relative;
+    top: 20px;
+    width: 400px;
+    height: 300px;
+    background-color: blue;
+    background: repeating-linear-gradient(red 10px,red 20px,yellow 10px,yellow 30px);
+}
+.box5
+{
+    position: relative;
+    top: 10px;
+    width: 400px;
+    height: 300px;
+    background-color: blue;
+    background: repeating-radial-gradient(red 10px,red 20px,yellow 10px,yellow 30px);
+}
+.box6
+{
+    width: 50vw;/*vmin(choose min value b/w width & height)/vmax(choose max value b/w width & height) also used instead of vw/vh*/
+    height: 50vh;
+    border: 2px solid black;    
+}

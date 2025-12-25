@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="CSS/Weather_App.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ngrok authentication -->
+    <!-- https://dashboard.ngrok.com/get-started/your-authtoken -->
+
+
+    <!-- website:openweather => api -->
+
+    <!-- Parameters used in weather -->
+    <!-- https://openweathermap.org/current -->
+
+    <!-- https://openweathermap.org/weather-conditions -->
+    <!-- weather key API -->
+    <!-- 316ecccdc8fc30ccde54628bbf2a3343 -->
+</head>
+<body>
+    <!-- input -->
+    <div class="inputBox">
+        <input type="text" id="city" placeholder="Location">
+        <button onclick="display()">
+            <i id="go" class="fa-solid fa-arrow-right" style="color: #11ff00;"></i>
+        </button>
+    </div>
+
+    <!-- main -->
+    <div class="container" id="container">
+
+        <div class="place" id="place">Place</div>
+        <div>
+            <i id="location" class="fa-solid fa-location-dot fa-beat-fade" style="color: #000000;"></i>
+        </div>
+        
+        <div class="image">
+            <img id="im1" src="images/Weather/sun.png" alt="">
+            <img id="im2" src="images/Weather/clouds2.png" alt="">
+            <img id="im3" src="images/Weather/clouds-with-rain.png" alt="">
+            <img id="im4" src="images/Weather/snow-logo.png" alt="">
+            <img id="im5" src="images/Weather/sunClouds.jpg" alt="">
+            <img id="im6" src="images/Weather/thunderstorm.png" alt="">
+            <img id="im7" src="images/Weather/moon.jpg" alt="">
+            <img id="im8" src="images/Weather/moonClouds.png" alt="">
+            <img id="im9" src="images/Weather/mist.png" alt="">
+            <img id="im0" src="images/Weather/Weather.png" alt="">
+        </div>
+        
+        <div class="temp">
+            <!-- &deg for degree symbol -->
+            <span id="temp">0&degc ||</span>
+            <span id="des">Description</span>
+            <i id="next" class="fa-solid fa-gear fa-spin" onclick="next()"></i>
+            <br>
+            <span id="curDated">16 jul 2002</span>
+        </div>
+
+        <div class="rainbow">
+            
+        </div>
+        <div class="mini">
+            <div class="hum">
+                <span id="humidity">Humidity: 100 %</span>
+                <span id="press">Pressure: 1000 hPa</span>
+            </div>
+            <div class="cloudy">
+                <span id="cloud">Clouds: 100 %</span>
+                <span id="feel">Feels_like: 0&degc</span>
+            </div>
+        </div>
+        
+    </div> 
+
+    <!-- more -->
+    <div class="more" id="more">
+        <i id="back" class="fa-solid fa-angles-left" onclick="back()"></i>
+        <div class="country">
+            <span id="country">Country: 00</span>
+        </div>
+        <div class="box12">
+            <div class="box1">
+                <h4>Speed</h4>
+                <span id="speed">Speed:</span>
+                <span id="deg">Degree:</span>
+            </div>
+            <div class="box2">
+                <h4>Visual</h4>
+                <span id="gust">Gust:</span>
+                <span id="vis">Visible:</span>
+            </div>
+        </div>
+        <div class="box34">
+            <div class="box3">
+                <h4>Sun</h4>
+                <span id="sunRise">-rise:</span>
+                <span id="sunSet">-set:</span>
+            </div>
+            <div class="box4">
+                <h4>Location</h4>
+                <span id="lat">Latitude:</span>
+                <span id="log">Longitude:</span>
+            </div>
+        </div>
+    </div>     
+
+
+    <script src="Javascript/Weather_App.js"></script>
+</body>
+</html>

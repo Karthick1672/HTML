@@ -1,0 +1,96 @@
+body
+{
+    background: linear-gradient(to right,  #df826c,#d0f288,#8adab2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box0
+{
+    width: 500px;
+    height: 500px;
+    background-color: #f8ffd2;
+    box-shadow: 10px 10px 10px 2px gray;
+    position: absolute;
+    transform: rotate(45deg);
+    border-radius: 20px;
+    z-index: -1;
+}
+h2
+{
+    position: absolute;
+    top: 20px;
+    font-family: cursive;
+    /* background-color: aqua; */
+    color: rgb(19, 236, 19);
+}
+.box
+{
+    width: 350px;
+    height: 400px;
+    background-color: black;
+    position: relative;
+    top: 80px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    border-radius: 10px;
+}
+.no_of_words
+{
+    position: absolute;
+    top: 320px;
+    color: #d0f288;
+    font-size: 1.5rem;
+}
+
+.inputbox
+{
+    position: relative;
+    top: 40px;
+    height:200px;
+    width: 200px;
+    text-align: justify;
+    border-radius: 10px;
+    background-color: beige;
+    border: 2px solid aqua;
+    line-height: 17px;
+    text-justify: auto;
+    font-size: 1rem;
+    padding: 10px;
+    box-sizing: border-box;
+    /* to remove the size change of text-area */
+    resize: none;
+}
+
+button
+{
+    position: absolute;
+    top: 500px;
+    background-color: green;
+    font-weight: 700;
+    border-radius: 50px;
+    font-size: 1,2rem;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+button:hover
+{
+    background-color: aquamarine;
+    color: black;
+    padding: 10px 40px;
+}
+
+.result{
+    position: absolute;
+    bottom: 130px;
+    display: flex;
+    justify-content: center;
+    color: orange ;
+}
+span
+{
+    font-weight: bold;
+    font-size: 35px;
+}

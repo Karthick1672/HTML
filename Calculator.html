@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body style="height: 100vh;" class="bg-dark d-flex justify-content-center align-items-center">
+
+    <div class="shadow container bg-warning border border-warning rounded" style="width: 340px;height: 450px;">
+        
+        
+        <!-- Output Display -->
+        <div class="outputDisplay overflow-hidden bg-info border h1 border-dark shadow m-2 rounded row text-dark justify-content-end align-items-center p-3" style="height: 80px;white-space: nowrap;text-overflow: ellipsis;">0</div>
+
+        <div style="height: 50px;" class="row text-dark justify-content-evenly m-3">
+            <button class="btn col-1  border border-danger bg-warning rounded-pill shadow text-danger d-flex align-items-center justify-content-center" title="Delete" onclick="Del()" style="width: 50px;height: 50px;font-size: 20px; font-weight: 400;">Del</button>
+            <button class="btn col-1  border border-danger bg-warning rounded-pill shadow text-danger d-flex align-items-center justify-content-center" title="All Clear" onclick="clearDisplay()" style="width: 50px;height: 50px;font-size: 20px; font-weight: 400;">AC</button>
+            <button class="btn col-1  border border-danger bg-warning rounded-pill shadow text-danger d-flex align-items-center justify-content-center" title="Percentage" onclick="displayOutput(45)" style="width: 50px;height: 50px;font-size: 20px; font-weight: 400;">%</button>
+            <button class="btn col-1  border border-danger bg-warning rounded-pill shadow text-danger d-flex align-items-center justify-content-center"  onclick="displayOutput(41)" title="Divide" style="width: 50px;height: 50px;font-size: 20px; font-weight: 500;">/</button>
+        </div>
+        <div style="height: 50px;" class="row text-dark justify-content-evenly m-3">
+            <button class="btn col-1  border border-danger bg-warning rounded-pill shadow" style="width: 50px;height: 50px;" onclick="displayOutput(7)">7</button>
+            <button class="btn col-1  border border-danger bg-warning rounded-pill shadow" style="width: 50px;height: 50px;" onclick="displayOutput(8)">8</button>
+            <button class="btn col-1  border border-danger bg-warning rounded-pill shadow" style="width: 50px;height: 50px;" onclick="displayOutput(9)">9</button>
+            <button class="btn col-1  border border-danger bg-warning rounded-pill shadow text-danger d-flex align-items-center justify-content-center" title="Multiply" onclick="displayOutput(42)" style="width: 50px;height: 50px;font-size: 20px; font-weight: 500;">*</button>
+        </div>
+        <div style="height: 50px;" class="text-dark row justify-content-evenly m-3">
+            
+            <button class="btn col-1  border border-danger bg-warning rounded-pill shadow" style="width: 50px;height: 50px;" onclick="displayOutput(4)">4</button>
+            <button class="btn col-1  border border-danger bg-warning rounded-pill shadow" style="width: 50px;height: 50px;" onclick="displayOutput(5)">5</button>
+            <button class="btn col-1  border border-danger bg-warning rounded-pill shadow" style="width: 50px;height: 50px;" onclick="displayOutput(6)">6</button>
+            <button class="btn col-1  border border-danger bg-warning rounded-pill shadow text-danger d-flex align-items-center justify-content-center"title="Subtract" onclick="displayOutput(43)" style="width: 50px;height: 50px;font-size: 20px; font-weight: 500;">-</button>
+        </div>
+        <div style="height: 50px;" class="text-dark d-flex row justify-content-evenly m-3">
+            <button class="btn col-1  border border-danger bg-warning rounded-pill shadow" style="width: 50px;height: 50px;" onclick="displayOutput(1)">1</button>
+            <button class="btn col-1  border border-danger bg-warning rounded-pill shadow" style="width: 50px;height: 50px;" onclick="displayOutput(2)">2</button>
+            <button class="btn col-1  border border-danger bg-warning rounded-pill shadow" style="width: 50px;height: 50px;" onclick="displayOutput(3)">3</button>
+            <button class="btn col-1  border border-danger bg-warning rounded-pill shadow text-danger d-flex align-items-center justify-content-center" title="Add" onclick="displayOutput(44)" style="width: 50px;height: 50px; font-size: 20px; font-weight: 500">+</button>
+        </div>
+        <div style="height: 50px;" class="text-dark d-flex row justify-content-evenly m-3">
+            <button class="btn col-1  border border-danger bg-warning rounded-pill shadow" title="Double Zero" style="width: 50px;height: 50px;" onclick="displayOutput(47)">00</button>
+            <button class="btn col-1  border border-danger bg-warning rounded-pill shadow" title="Zero" style="width: 50px;height: 50px;" onclick="displayOutput(0)">0</button>
+            <button class="btn col-1  border border-danger bg-warning rounded-pill shadow" title="Decimal" style="width: 50px;height: 50px;" onclick="displayOutput(46)">.</button>
+            <button class="btn col-1  border border-danger bg-warning rounded-pill shadow text-danger d-flex align-items-center justify-content-center" title="Total" onclick="total()" style="width: 50px;height: 50px; font-size: 20px; font-weight: 800;">=</button>
+        </div>
+    </div>
+    
+    
+
+    <!-- <div class="Basic">
+        
+    <div class="container my-4">
+        <div class="row text-light border border-3 border-success">
+            <div class="bg-danger rounded text-center col m-1">Grid1</div>
+            <div class="bg-danger rounded text-center col m-1">Grid2</div>
+            <div class="bg-danger rounded text-center col m-1">Grid3</div>
+        </div>
+        <div class="row text-light border border-3 border-success justify-content-evenly">
+            <div class="bg-danger rounded text-center col-4 m-1">Grid4</div>
+            <div class="bg-danger rounded text-center col-4 m-1">Grid5</div>
+        </div>
+        <div class="row text-light border border-3 border-success justify-content-around">
+            <div class="bg-danger rounded text-center col-4 m-1">Grid6</div>
+        </div>
+    </div>
+    <div class="shadow border border-danger border-3 m-4 rounded bg-warning text-center p-2">shadow</div>
+    <div class="border border-3 rounded-pill border-success p-2">BORDER</div>
+
+    <div class="bg-primary mt-2 mb-3 p-4">Margin top-2 & Bottom-3, padding -3</div>
+
+    <a href="Face.html" class="btn border-success">Aang</a>
+    <br>
+    <button class="btn btn-outline-danger">Apply</button>
+    <button class="btn bg-info">REBOOT</button>
+    <div class="bg-primary h1">Primary Color</div>
+    <div class="bg-success text-info h1">Success</div>
+    <div class="h1">this is h1</div>
+    <div class="h3"> this is h3</div>
+    <h1>h1</h1>
+    <div class="display-1 text-center" style="background-color: aqua;">display-1</div>
+    <div class="display-6">display-6</div>
+    <div class="fw-bold" id="h1">Font Weight - BOLD</div>
+    </div> -->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script>
+    const OD = document.querySelector(".outputDisplay");
+    var sum = "";
+    // Numbers Button
+    function displayOutput(e)
+    {
+        if(e == 41)
+        {
+            sum = sum + "/";
+        }
+        else if(e == 42)
+        {
+            sum = sum + "*";
+        }
+        else if(e == 43)
+        {
+            sum = sum + "-";
+        }
+        else if(e == 44)
+        {
+            sum = sum + "+";
+        }
+        else if(e == 45)
+        {
+            sum = sum + "%";
+        }
+        else if(e == 46)
+        {
+            sum = sum + ".";
+        }
+        else if(e == 47)
+        {
+            sum = sum + "00";
+        }
+        else
+        {
+            sum = sum+e;
+        }
+        
+        OD.innerHTML = sum;
+    }
+
+    // AC Button
+    function clearDisplay()
+    {
+        sum = "";
+        OD.innerHTML = "0";
+    }
+
+    // Del
+    function Del()
+    {
+        sum = sum.substring(0, sum.length -1);
+        OD.innerHTML = sum;
+        if(sum.length == 0 || sum.length < 0)
+        {
+            sum = "";
+            OD.innerHTML = "0";    
+        }        
+    }
+    // Total
+    function total()
+    {
+        // Sum String to Number Int
+        var charArr = sum.split('');
+        console.log(charArr);
+        let str1 = "";
+        let num1 = 0,divide = 0, percent = 0, add = 0, sub = 0, Multi = 0 ;
+        var tolNum = [];
+        var tolOpr = [];
+
+        for(let i = 0; i<sum.length;i++)
+        {
+            if(charArr[i] === "%" ||charArr[i] === "/" ||charArr[i] === "*" ||charArr[i] === "-" ||charArr[i] === "+")
+            {
+                num1 = parseInt(str1);
+                tolNum.push(num1);
+                str1 = "";
+            }
+            else
+            {
+                str1 = str1 + charArr[i];
+            }
+        }
+        num1 = parseInt(str1);
+        tolNum.push(num1);
+        // console.log(tolNum)
+        // Sum String to total Operater 
+        for(let i = 0; i<sum.length;i++)
+        {
+            if(charArr[i] === "%" ||charArr[i] === "/" ||charArr[i] === "*" ||charArr[i] === "-" ||charArr[i] === "+")
+            {
+                tolOpr.push(charArr[i]);
+            }
+        }
+
+        // OUTPUT
+        for(let i=0; i<tolOpr.length; i++)
+        {
+            if (tolOpr[i] === "%")
+            {
+                percent = (tolNum[i] / 100) * tolNum[i+1];
+                tolNum[i] = percent;
+                tolNum[i+1] = percent;
+                console.log(tolNum[i])
+                alert("%")
+            }
+            else
+            {
+                if(tolOpr[i] === "/")
+                {
+                    divide = tolNum[i] / tolNum[i+1];
+                    tolNum[i] = divide;
+                    tolNum[i+1] = divide;
+                    console.log(tolNum[i])
+                    // alert("/")
+                    OD.innerHTML = tolNum[i];    
+                }
+                else
+                {
+                    if(tolOpr[i] === "*")
+                    {
+                        Multi = tolNum[i] * tolNum[i+1];
+                        tolNum[i] = Multi;
+                        tolNum[i+1] = Multi;
+                        console.log(tolNum[i])
+                        // alert("*")
+                        OD.innerHTML = tolNum[i];    
+                    }
+                    else
+                    {
+                        if(tolOpr[i] === "+")
+                        {
+                            add = tolNum[i] + tolNum[i+1];
+                            tolNum[i] = add;
+                            tolNum[i+1] = add;
+                            console.log(tolNum[i])
+                            // alert("+")
+                            OD.innerHTML = tolNum[i];    
+                        }
+                        else
+                        {
+                            if(tolOpr[i] === "-")
+                            {
+                                sub = tolNum[i] - tolNum[i+1];
+                                tolNum[i] = sub;
+                                tolNum[i+1] = sub;
+                                console.log(tolNum[i])
+                                // alert("-")
+                                OD.innerHTML = tolNum[i];    
+                            }
+                        }
+                    }
+                    
+                }
+            }
+
+            
+        }
+    }
+
+</script>
+</html>

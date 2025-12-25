@@ -1,0 +1,166 @@
+:root /*root => it is used to declare variable*/
+{
+    /* --yel1 => it is an variable */
+    --yel:yellow;
+    --navy:#4E4FEB;
+    --blue:#068FFF;
+    --grey:#F5F7F8;
+    --green:#38E54D;
+}
+
+body
+{
+    margin: 0;
+    color: var(--grey);
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header a
+{
+    color:var(--yel);
+    text-decoration: none; /* to remove the underline for link*/
+}
+.landing
+{
+    background-image: url('../Media/Project-1\(pic1\).jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+header
+{
+    display: flex;
+    padding: 1em;
+}
+header a i,nav a i 
+{
+    margin-right: .5em;
+}
+#logo
+/* Lake Restaurant */
+{
+    flex: 3; /*it split three part of screen only (display:flex;) is given*/
+    font-size: 1.25em;
+}
+nav
+{
+    flex: 2; /*it split two part of screen only (display:flex;) is given*/
+    display: flex;
+}
+nav a
+{
+    flex: 1;
+}
+nav a:hover
+{
+    color: var(--green);
+    text-decoration: underline;
+}
+.maintext
+{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    padding: 2em;
+}
+.tagline1
+{
+    color: var(--blue);
+    font-size: 2.5em;
+    font-weight:bolder ;
+}
+.tagline2
+{
+    color: aquamarine;
+}
+.maintext div
+{
+    margin-top: .75em;
+}
+.maintext button
+{
+    width: 20vw;
+    margin-top: 2em;
+    padding: .7em;
+    border-radius: 10px;
+    border: 2px solid red;
+    font-size: 1em; 
+}
+button:hover
+{
+    background-color: green;
+    color: whitesmoke;
+    border: 2px solid green;
+}
+.menu
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+.menu th
+{
+    color: #38E54D;
+    font-size: 1.8em;
+}
+#menulogo,#locationlogo
+{
+    color: red;
+    font-size: 2.5em;
+    display: flex;
+    justify-content: center
+}
+table{
+    width: 100%;
+    padding: 1.5em;
+}
+.menu tr{
+    display: flex;
+    justify-content: center;
+    margin-top: .8em;
+}
+.menu td:nth-child(1)
+{
+    flex: 1;
+    justify-content: left;
+}
+.menu td:nth-child(2)
+{
+justify-content: center;
+}
+.maincourse
+{
+    grid-row: span 2;
+}
+.location
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+.location h2
+{
+    color: #38E54D;
+    margin-bottom: .8em;
+}
+/*
+.location #add1
+{
+    flex:1;
+    padding: 1.5em;
+}
+.location #add2
+{
+    flex: auto;
+    padding: 1.5em;
+}
+.location #add3
+{
+    flex: 1;
+    padding: 1.5em;
+}*/
+footer
+{
+    background-color: white;
+    color: black;
+    padding: .25em 1em;
+}

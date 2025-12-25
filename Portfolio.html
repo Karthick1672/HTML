@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/Portfolio.css" />
+  </head>
+  <body>
+    <header>
+      <div class="p1">
+        Software Developer
+        <div class="p2">
+          <a id="ab" href="">About</a>
+          <a id="sk" href="">Skills</a>
+          <a id="pr" href="">Project</a>
+        </div>
+        
+      </div>
+      <div class="p3">
+        <i id="brain" onclick="slideMenu()" class="fa-solid fa-brain"></i>
+      </div>
+      
+    </header>
+
+    <!-- slide Menu -->
+    <div class="sliderContainer">
+      <div id="slideBoard" class="slideBoard">
+        <a id="abo" href="#profile" onclick="asp()"></a>
+        <a id="ski" href="#SkillsCap" onclick="asp()"></a>
+        <a id="pro" href="#ProjectCap" onclick="asp()"></a>
+        <!-- <a id="pro" href="#MoreProjectCap"></a> -->
+        
+      </div>
+    </div>
+
+    <!-- Profile -->
+     <div id="profile" class="profile">
+      <p  data-aos="fade-down">Hello Everyone,</p>
+      <p data-aos="fade-down">I'm <span>Naren Karthick</span></p>
+      <div class="profileImg"><img data-aos="flip-left" data-aos-delay="500" data-aos-duration="1500" src="images/Port-1.png" alt=""></div>
+      <div class="buttons"  data-aos="fade">
+        <a href="mailto:karthicknaren167@gmail.com">
+          <button class="contact">
+            Contact
+          </button>
+        </a>
+  
+        <!-- Linkedin Link -->
+        <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit">
+          <i id="ico" class="fa-brands fa-linkedin"></i>
+        </a>
+        <!-- Github -->
+        <a href="https://github.com/Karthick1672/project">
+          <i id="ico" class="fa-brands fa-github"></i>
+        </a>
+      </div>
+      
+
+      <!-- <button type="button" class="level" id="level" onclick="setTimeout(() =>{window.location.assign('Memory_Card_game_level3.html')},3000);"><span></span>Next Level</button> -->
+     </div>
+
+     <!-- Skill -->
+      <h2 id="SkillsCap">
+        Skills
+      </h2>
+      <div class="skillBox">
+        <h3 class="ps1">Profiency Skills</h3>
+        <div class="t1">
+          <div class="t1Shadow">
+            <div class="t2">
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+            </ul>
+          </div>
+          <div class="t3">
+            <ul>
+              <li>Python</li>
+              <li>Java & C#</li>
+              <li>C & C++</li>
+            </ul>
+          </div>
+
+          </div>
+          <div class="shadow">
+
+          </div>
+        </div>
+        
+        <h3 class="ps1">Soft Skills</h3>
+        <div class="t1">
+          <div class="t1Shadow">
+            <div class="t2">
+            <ul>
+              <li>Decision making</li>
+              <li>Good in teamwork</li>
+              <!-- <li></li> -->
+            </ul>
+          </div>
+          <div class="t3">
+            <ul>
+              <li>Volunteer</li>
+              <li>Flexibility</li>
+              <!-- <li>C & C++</li> -->
+            </ul>
+          </div>
+
+          </div>
+          <div class="shadow">
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Project -->
+      <h2 id="ProjectCap">
+        Project
+      </h2>
+      <div class="videoBox">
+        <h3>Weather App</h3>
+        <video controls poster="Media/4th.png" src="Media/4th.mp4" width="350rem"></video>
+        <h3>Ludo Game</h3>
+        <video controls poster="Media/Ludo .png" src="Media/3rd.mp4" width="350rem"></video>
+        <h3>Digital Clock</h3>
+        <video controls poster="Media/2nd.png" src="Media/2nd.mp4" width="350rem"></video>
+      </div>
+
+      <!-- Contact -->
+      <h2 id="MoreProjectCap">
+        More Projects
+      </h2>
+      <div class="morePro">
+        <a id="mp" href="K.html">Project-K</a>
+        <a id="mp" href="Car.html">Car</a>
+        <a id="mp" href="color_flipper.html">Color_Flipper</a>
+        <a id="mp" href="Currency_Convertor.html">Currency_Convertor</a>
+        <a id="mp" href="Devil_Fruit.html">Devil_Fruit</a>
+        <a id="mp" href="form_sign_up.html">Form_Sign_Up</a>
+        <a id="mp" href="Hex_2_Rgb.html">Hex_2_Rgb</a>
+        <a id="mp" href="Lake_Restaurant.html">Lake_Restaurant</a>
+        <a id="mp" href="Memory_Card_game_level1.html">Memory_Card_Game</a>
+        <a id="mp" href="Photo_Hover.html">Photo_Hover</a>
+        <a id="mp" href="Snake.html">Snake Game</a>
+        <a id="mp" href="Snake_Water_Gun.html">Snake_Water_Gun</a>
+        <a id="mp" href="Stop_watch.html">Stop_Watch</a>
+        <a id="mp" href="Todo_List.html">Todo_List</a>
+        <a id="mp" href="Unit convertor.html"> Unit Convertor</a>
+        <a id="mp" href="word_counter.html">Word_Counter</a>
+      </div>
+
+      <!-- For Mobile -->
+       <div class="Alert" id="Alert">
+        Only For Mobiles
+       </div>
+    
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="Javascript/Portfolio.js"></script>
+    <script>
+      AOS.init(
+      {
+        duration: 1500,
+        // once: false,
+      });
+    </script>
+  </body>
+  
+</html>

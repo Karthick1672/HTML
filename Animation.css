@@ -1,0 +1,72 @@
+.Animation
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    background-color: rgb(233, 8, 191);
+    animation-name: circle;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    /* animation-iteration-count:infinite; => to indicates no. of times to do the animation*/
+    animation-iteration-count: 10;
+
+}
+/* circle => animation-name:circle; */
+@keyframes circle {
+/* 0% => for smooth animation */
+    0%
+    {
+        background-color: chartreuse;
+        width: 200px;
+        height: 200px;
+        left: 0px;
+        top: 0px;
+    }
+
+
+
+    /* 80% => animation-duration:5s; */
+    70%
+    {
+        background-color: crimson;
+        width: 300px;
+        height: 300px;
+        left: 200px;
+        top: 200px;
+    }
+
+    100%
+    {      
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(233, 8, 191);
+    right: 300px;
+    bottom: 300px;
+    }
+}
+
+.Transition
+{
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    /*transition-property:width =>to select particular function to work*/
+    transition-property: all;
+    /*transition-duration: 3s; => to do the work in 3sec*/
+    transition-duration: 3s;
+    /* transition-timing-function:linear; =>  */
+    transition-timing-function:linear;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size:2rem ;
+}
+.Transition:hover
+{
+    background-color: blue;
+    width: 600px;
+    /* rotate: 45deg; */
+    transform: translatey(50px);
+}

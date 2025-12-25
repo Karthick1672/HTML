@@ -1,0 +1,285 @@
+:root
+{
+  --back:white;
+  --green: green;
+}
+*
+{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: #212121;
+}
+body
+{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container
+{
+  width: 300px;
+  height: 300px;
+  background: var(--back);
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--back), 0 0 20px var(--back);
+  visibility: visible;
+}
+.place
+{
+  width: auto;
+  height: auto;
+  background: inherit;
+  font-size: 2.3em;
+  margin: 10px;
+  border-radius: 10px;
+}
+.image
+{
+  width: inherit;
+  height: 120px;
+  background-color: var(--back);
+  display: flex;
+  justify-content: center;
+  /* mix-blend-mode: multiply; */
+}
+#im1,#im2,#im3,#im4,#im5,#im6,#im7,#im8,#im9,#im0{
+  width: 120px;
+  height: 120px;
+  visibility: hidden;
+  position: absolute;
+}
+.temp
+{
+  width: 300px;
+  height: 50px;
+  background: var(--back);
+  color: black;
+  font-size: 1.5rem;
+  margin-top: 5px;
+}
+#temp,#curDated
+{
+  padding-left: 10px;
+}
+#curDated
+{
+  font-size: 0.65em;
+  position: absolute;
+}
+/* location symbol */
+#location
+{
+  width: 20px;
+  height: 20px;
+  background-color: var(--back);
+  text-align: center;
+  font-size: 1em;
+  position: absolute;
+  margin-left: 10px;
+}
+#next
+{
+  background-color: var(--back);
+  margin-left: 40px;
+  margin-top: 10px;
+  position: absolute;
+  font-size: 30px;
+  cursor: pointer;
+  color: #212121;
+}
+#back
+{
+  position: absolute;
+  background-color: var(--back);
+  font-size: 25px;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+#next:hover,#back:hover
+{
+  color: lime;
+}
+.mini
+{
+  width: 300px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+}
+span
+{
+  background-color: var(--back);
+}
+.hum
+{
+  width: 150px;
+  height: 50px;
+  background: var(--back);
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid black;
+}
+.cloudy
+{
+  width: 150px;
+  height: 50px;
+  background: var(--back);
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid black;
+}
+button 
+{
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: all 0.3s;
+  border: 2px solid var(--green);
+  background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
+  color: var(--green);
+  box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+} 
+button:hover 
+{
+  color: #82ffc9;
+  box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.6), 0 0 3px 8px rgba(27, 253, 156, 0.2);
+} 
+#city
+{
+  /* to stop the input border */
+  outline: none;
+  width: 230px;
+  height: 40px;
+  border: none;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 20px;
+  background: #212121;
+  border: 2px solid var(--green);
+  box-shadow: 0 0 10px var(--green);
+  color: var(--green);
+  margin-top: 10px;
+  /* position: absolute; */
+  /* top: 80px; */
+  /* left: 170px; */ 
+}
+#city:hover{
+  border: 2px solid var(--green);
+  box-shadow: 0 0 10px var(--green), 0 0 20px var(--green);
+}
+/* arrow icon */
+#go{
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.inputBox{
+  width: 300px;
+  height: 70px;
+  background-color: #212121;
+}
+
+.rainbow
+{
+  width: 280px;
+  height: 3px;
+  /* background: linear-gradient(to right,#b5f01c,#de6a06,#7e16e1); */
+  background: linear-gradient(to right, violet, indigo,blue,green,yellow,orange,red);
+  background-size: 300% 300%;
+  position: absolute;
+  margin-left: 10px;
+  border-radius: 30px;
+  animation: animate 6s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0%{
+    background-position: 0 50%;
+  }
+  50%
+  {
+    background-position: 100% 50%;
+  }
+  100%
+  {
+    background-position: 50% 0;
+  }
+}
+
+.more
+{
+  width: 300px;
+  height: 300px;
+  background: var(--back);
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--back), 0 0 20px var(--back);
+  visibility: hidden;
+  margin-top: 80px;
+  position: absolute;
+}
+
+.country
+{
+  width: 300px;
+  height: 40px;
+  background-color: var(--back);
+  text-align: end;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.2em;
+  padding-right: 25px;
+}
+.box12,.box34
+{
+  width: 300px;
+  height: 120px;
+  display: flex;
+  background-color: var(--back);
+  align-items: center;
+}
+.box1,.box2,.box3,.box4
+{
+  width: 120px;
+  height: 100px;
+  background-color: #212121;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  line-height: 25px;
+  margin-left: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #212121,0 0 15px #212121;
+}
+
+#speed,#deg,#gust,#vis,#lat,#log,#sunSet,#sunRise
+{
+  background-color: #212121;
+  color: var(--back);
+  font-size: 1em;
+}
+h4{
+  font-family: 'Courier New', Courier, monospace;
+  width: inherit;
+  text-align: start;
+  padding-left: 10px;
+  color: #82ffc9;
+}

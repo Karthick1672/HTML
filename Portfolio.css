@@ -1,0 +1,466 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body
+{
+  background-color: #212121;
+}
+:root
+{
+  --ali: aliceblue;
+  --212: #212121
+}
+header
+{
+  width: 100%;
+  height:  3rem;
+  background-color: var(--color);
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  background-color: var(--ali);
+  color: var(--212);
+  justify-content: space-between;
+  box-shadow: 0px 0px 30px black,
+              0px 0px 10px black;
+}
+.p1
+{
+  margin-left: 1rem;
+  background-color: var(--ali);
+  color: var(--212);
+  display: flex;
+  justify-content: space-around;
+}
+.p3
+{
+  background-color: var(--ali);
+  color: var(--212);
+  width: 50px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#ab,#sk,#pr,#co
+{
+  background-color: var(--ali);
+  color: var(--212);
+}
+#brain
+{
+  background-color: var(--ali);
+  color: var(--212);
+  font-size: 25px;
+  /* animation: fade 1s infinite linear; */
+}
+@keyframes fade {
+  0%
+  {
+    /* font-size: 25px; */
+    transform: scale(1);
+    opacity: .3;
+  }
+  50%{
+    transform: scale(1.3);
+    /* font-size: 30px; */
+    opacity: 1;
+  }
+  100%
+  {
+    transform: scale(1);
+    font-size: 25px;
+    opacity: .3;
+  } 
+}
+
+@keyframes rotateOn
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotateOff 
+{
+  0%
+  {
+    transform: rotate(360deg);
+  }
+  100%
+  {
+    transform: rotate(0deg);
+  }
+} 
+.sliderContainer
+{
+  width: 13rem;
+  height: 12rem;
+  font-size: 30px;
+  position: absolute;
+  right: 0rem;  
+  z-index: 10;
+}
+.slideBoard
+{
+  width: 0%;
+  height: inherit;
+  animation: slideOn1 .5s ease-in-out;
+  position: absolute;
+  right: 0rem;
+  display: flex;
+  flex-direction: column;
+  background-color: yellow;
+}
+a
+{
+  text-decoration: none;
+  color: var(--212);
+  font-size: 2rem;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+
+@keyframes slideOn {
+  0%
+  {
+    width: 0%;
+  }
+  100%
+  {
+    width: 100%;
+  }
+}
+@keyframes slideOff {
+  0%
+  {
+    width: 100%;
+  }
+  100%
+  {
+    width: 0%;
+  }
+}
+.profile
+{
+  width: 100%;
+  height: 30rem;
+  font-size: 3rem;
+  background-color: var(--212);
+  color: var(--ali);
+  padding: 1rem;
+}
+.contact 
+{
+  position: relative;
+  padding: 10px 22px;
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: #7d2ae8;
+  transition: all 0.2s ease;
+}
+.contact:active 
+{
+  transform: scale(0.96);
+}  
+.contact:before,
+.contact:after 
+{
+  position: absolute;
+  content: "";
+  width: 150%;
+  left: 50%;
+  height: 100%;
+  transform: translateX(-50%);
+  z-index: -1000;
+  background-repeat: no-repeat;
+}
+.contact:hover:before 
+{
+  top: -70%;
+  background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, transparent 20%, #7d2ae8 20%, transparent 30%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+      10% 10%, 18% 18%;
+  background-position: 50% 120%;
+  animation: greentopBubble 0.6s ease;
+}
+@keyframes greentopBubble 
+{
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+          40% 90%, 55% 90%, 70% 90%;
+  }
+  
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+      50% 50%, 65% 20%, 90% 30%;
+  }
+  
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+      50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+.contact:hover::after {
+  bottom: -70%;
+  background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+  background-position: 50% 0%;
+  animation: greenbottomBubbles 0.6s ease;
+}
+@keyframes greenbottomBubbles {
+  0% {
+      background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+        70% -10%, 70% 0%;
+  }
+  
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+      105% 0%;
+  }
+  
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+      110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+.profileImg
+{
+  width: 100%;
+  height: 13rem;
+}
+img
+{
+  width: inherit;
+  height: inherit;
+  padding: .5rem;
+}
+h2
+{
+  color: aqua;
+  width: 100%;
+  font-style: italic;
+  font-size: 1.6rem;
+  text-align: center;
+  text-decoration: underline;
+}
+.skillBox
+{
+  color: var(--ali);
+  /* padding: 1rem; */
+  /* text-align: justify; */
+  /* background-color: aqua; */
+}
+.videoBox
+{
+  width: 100%;
+  height: 45rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: aqua; */
+}
+h3{
+  color: var(--ali);
+  text-align: start;
+  padding-left: 2rem;
+  margin-top: 3rem;
+  width: 100%;
+}
+.morePro
+{
+  width: 100%;
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+}
+.buttons
+{
+  width: 100%;
+  height:70px;
+  display: flex;
+  /* background-color: #7d2ae8; */
+}
+#ico
+{
+  font-size: 2rem;
+  margin-top: 8px;
+  color: var(--ali);
+}
+#ico:hover
+{
+  color: yellow;
+}
+#mp
+{
+  color: var(--ali);
+  font-size: 20px;
+  width:fit-content;
+}
+#mp:hover
+{
+  color: yellow;
+  position: relative;
+  left: .5rem;
+  font-weight: 900;
+}
+h3
+{
+  color: yellow;
+  font-style: italic;
+  width: 100%;
+  height: 30px;
+  font-size: 20px;
+  /* background-color: #7d2ae8; */
+  display: flex;
+  align-items: center;
+}
+li
+{
+  margin-left: 18px;
+  margin-top: 10px;
+}
+.t1
+{
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  /* background-color: #7d2ae8; */
+}
+.t1Shadow
+{
+  width: 90%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid yellow;
+  border-radius: 10px;
+  animation: boxAnimation 1s infinite ease-in-out;
+  position: relative;
+}
+@keyframes boxAnimation {
+  0%
+  {
+    top: 0;
+  }
+  50%
+  {
+    top: 20px;
+  }
+  100%
+  {
+    top: 0px;
+    /* margin-top: 0px; */
+  }
+}
+@keyframes shadowAnimation {
+  0%
+  {
+    width: 95%;
+  }
+  50%
+  {
+    width: 90%;
+  }
+  100%
+  {
+    width: 95%;
+  }
+}
+.t2,.t3
+{
+  width: 50%;
+  height: inherit;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ps1
+{
+  padding: 0;
+  justify-content: center;
+  text-shadow: 0px 0px 10px yellow,
+               0px 0px 20px yellow,
+               0px 0px 40px yellow;
+}
+.shadow
+{
+  width: 90%;
+  height: 20px;
+  background-color: yellow;
+  border-radius: 50%;  
+  animation: shadowAnimation 1s infinite ease-in-out;
+}
+span
+{
+  font-size: 45px;
+  color: yellow;
+
+}
+#MoreProjectCap
+{
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+#ProjectCap
+{
+  margin-top: 20px;
+}
+.Alert
+{
+  width: 100%;
+  height: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ali);
+  font-size: 100px;
+  display: none;
+  /* background-color: #7d2ae8; */
+}
+@media screen and (min-width: 768px)
+{
+  #ProjectCap,header,.sliderContainer,.profile,h2,
+  .skillBox,.videoBox,.morePro
+  {
+    display: none;
+  }
+  .Alert
+  {
+    display: flex;
+  }
+}

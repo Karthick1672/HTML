@@ -1,0 +1,150 @@
+:root
+{
+    --lime: #00ff00;
+    --white: white;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.board
+{
+    width: 550px;
+    height: 548px;
+    background: black;
+    border: 5px solid rgb(248, 129, 129);
+    border-radius: 15px;
+    overflow: hidden;
+    position: absolute;
+}
+.row1,.row2,.row3,.row4,.row5,.row6,.row7,.row8
+{
+    display: flex;
+    column-gap: 2px;
+}
+.box1,.box3,.box5,.box7
+{
+    width: 68px;
+    height: 68px;
+    background: var(--lime);
+}
+.box2,.box4,.box6,.box8
+{
+    width: 68px;
+    height: 68px;
+    background: var(--white);
+}
+.box9,.box11,.box13,.box15
+{
+    width: 68px;
+    height: 68px;
+    background: var(--white);
+}
+.box10,.box14,.box16,.box12
+{
+    width: 68px;
+    height: 68px;
+    background: var(--lime);
+}
+.box18,.box20,.box22,.box24
+{
+    width: 68px;
+    height: 68px;
+    background: var(--white);
+}
+.box17,.box19,.box21,.box23
+{
+    width: 68px;
+    height: 68px;
+    background: var(--lime);
+}
+.box25,.box27,.box29,.box31
+{
+    width: 68px;
+    height: 68px;
+    background: var(--white);
+}
+.box26,.box28,.box30,.box32
+{
+    width: 68px;
+    height: 68px;
+    background: var(--lime);
+}
+.box34,.box36,.box38,.box40
+{
+    width: 68px;
+    height: 68px;
+    background: var(--white);
+}
+.box33,.box35,.box37,.box39
+{
+    width: 68px;
+    height: 68px;
+    background: var(--lime);
+}
+.box41,.box47,.box43,.box45
+{
+    width: 68px;
+    height: 68px;
+    background: var(--white);
+}
+.box42,.box44,.box46,.box48
+{
+    width: 68px;
+    height: 68px;
+    background: var(--lime);
+}
+.box50,.box52,.box54,.box56
+{
+    width: 68px;
+    height: 68px;
+    background: var(--white);
+}
+.box49,.box51,.box53,.box55
+{
+    width: 68px;
+    height: 68px;
+    background: var(--lime);
+}
+.box57,.box59,.box61,.box63
+{
+    width: 68px;
+    height: 68px;
+    background: var(--white);
+}
+.box58,.box60,.box62,.box64
+{
+    width: 68px;
+    height: 68px;
+    background: var(--lime);
+}
+.whitesoldier1
+{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top: 90px;
+    left: 15px;
+    cursor: pointer;
+}
+
+.whitesoldier1:hover{
+    width: 50px;
+    .box10
+    {
+        background: black;
+    }
+
+}

@@ -1,0 +1,425 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: linear-gradient(to bottom, skyblue 300px , white);
+  /* background: rgb(25, 139, 227); */
+}
+
+.left_triangle {
+  position: relative;
+  right: 72px;
+  top: 1px;
+  width: 0;
+  height: 0;
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+  /* height of triangle */
+  border-bottom: 69px solid black;
+}
+
+.car_top {
+  width: 200px;
+  height: 70px;
+  background: black;
+  position: absolute;
+  bottom: 140px;
+  left: 180px;
+  border-radius: 15px;
+  transform: rotate(-5deg);
+}
+
+.back_bend {
+  width: 15px;
+  height: 40px;
+  background: black;
+  position: absolute;
+  bottom: 57px;
+  left: 7px;
+  border-top-left-radius: 40%;
+  border-bottom-left-radius: 100%;
+}
+.car_body {
+  width: 650px;
+  height: 100px;
+  background: black;
+  position: absolute;
+  left: 15px;
+  bottom: 40px;
+  border-radius: 10px 15px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 20%;
+  border-top-right-radius: 23%;
+  border-bottom-right-radius: 10%;
+}
+/* car_body center line */
+.door1 {
+  width: 215px;
+  height: 85px;
+  background: wheat;
+  position: relative;
+  left: 22px;
+  bottom: 16px;
+
+  /* border-color:white transparent white transparent; */
+  clip-path: polygon(25% 0%, 77% 0%, 100% 50%, 77% 100%, 25% 100%, 50% 50%);
+  
+}
+
+#tyre_1 {
+  width: 80px;
+  height: 80px;
+  background: black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  border: 5px solid rgb(139, 222, 14);
+  justify-content: center;
+  /* rotation of wheel */
+  animation: rotation 8s infinite linear;
+  transform-origin: center;
+  position: absolute;
+  left: 130px;
+  top: 55px;
+}
+#tyre_2 {
+  width: 80px;
+  height: 80px;
+  background: black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  border: 5px solid rgb(139, 222, 14);
+  justify-content: center;
+  /* rotation of wheel */
+  animation: rotation 8s infinite linear;
+  transform-origin: center;
+  position: absolute;
+  left: 530px;
+  top: 55px;
+}
+
+.line1 {
+  width: 80px;
+  height: 6px;
+  background: green;
+  transform: rotate(90deg);
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.line2 {
+  width: 80px;
+  height: 6px;
+  background: green;
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.line3 {
+  width: 60px;
+  height: 7px;
+  background: rgb(119, 198, 1);
+  transform: rotate(45deg);
+  position: absolute;
+  border-radius: 80%;
+}
+.line4 {
+  width: 60px;
+  height: 7px;
+  background: rgb(119, 198, 1);
+  position: absolute;
+  transform: rotate(-45deg);
+  border-radius: 80%;
+}
+.tyre_center {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: wheat;
+  z-index: 1;
+}
+
+@keyframes rotation 
+{
+  from 
+  {
+    transform: rotate(0deg);
+  }
+  to 
+  {
+    /* speed of wheel */
+    transform: rotate(10000deg);
+  }
+}
+
+.car {
+  display: flex;
+  height: 100vh;
+  align-items: end;
+  justify-content: start;
+  position: absolute;
+  bottom: 30px;
+  animation: move 10ms infinite linear;
+  visibility: hidden;
+}
+
+@keyframes move {
+  0%{
+    position: absolute;
+    bottom: 30px;
+  }
+  50%
+  {
+    position: absolute;
+    bottom: 32.5px;
+  }
+  100%
+  {
+    position: absolute;
+    bottom: 30px;
+  }
+}
+.left_triangle1 {
+  position: relative;
+  bottom: 40px;
+  right: 165px;
+  width: 0;
+  height: 0;
+  border-left: 200px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 30px solid black;
+  transform: rotate(5deg);
+}
+.right_triangle {
+  position: relative;
+  left: 101px;
+  bottom: 95.5px;
+  width: 0;
+  height: 0;
+  border-left: 90px solid transparent;
+  border-right: 80px solid transparent;
+  /* height of triangle */
+  border-bottom: 75px solid black;
+  z-index: 1;
+  transform: rotate(5deg);
+}
+.right_triangle1 {
+  position: relative;
+  bottom: 95px;
+  left: 235px;
+  width: 0;
+  height: 0;
+  border-left: 0px solid transparent;
+  border-right: 180px solid transparent;
+  /* height of triangle */
+  border-bottom: 15px solid black;
+  z-index: 1;
+  transform: rotate(5deg);
+}
+.front_bend {
+  width: 20px;
+  height: 40px;
+  background: black;
+  position: absolute;
+  left: 655px;
+  bottom: 47.5px;
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 200%;
+}
+
+.window1 {
+  width: 130px;
+  height: 55px;
+  background: aquamarine;
+  position: absolute;
+  bottom: 150px;
+  left: 300px;
+  clip-path: polygon(3% 9%, 45% 0, 90% 99%, 6% 100%);
+}
+
+.window2 {
+  width: 70px;
+  height: 50px;
+  background: aquamarine;
+  position: absolute;
+  bottom: 150px;
+  left: 235px;
+  clip-path: polygon(20% 10%, 95% 0, 100% 100%, 10% 100%);
+}
+
+.window3 {
+  width: 50px;
+  height: 45px;
+  background: aquamarine;
+  position: absolute;
+  bottom: 150px;
+  left: 200px;
+  clip-path: polygon(55% 4%, 92% 0, 79% 100%, 0% 100%);
+}
+
+.door3 {
+  width: 665px;
+  height: 20px;
+  border: 2px solid white;
+  border-color: transparent transparent white transparent;
+  border-bottom-left-radius: 50%;
+  /* border-radius: 50px/100%; */
+  position: absolute;
+  bottom: 20px;
+}
+
+/* 
+https://10015.io/tools/css-box-shadow-generator
+*/
+#tyre_1,
+#tyre_2 {
+  -webkit-box-shadow: -0.5px -0.5px 5.5px 15px #860d0d;
+  -moz-box-shadow: -0.5px -0.5px 5.5px 15px #860d0d;
+  box-shadow: -0.5px -0.5px 1.5px 15px rgb(39, 38, 38);
+}
+
+.logo {
+  width: 5px;
+  height: 25px;
+  background: gray;
+  position: absolute;
+  bottom: 120px;
+  left: 650px;
+  z-index: 1;
+  border-radius: 100%;
+}
+
+.logo1 {
+  width: 5px;
+  height: 20px;
+  background: grey;
+  transform: rotate(-90deg);
+  border-radius: 100%;
+}
+
+.head-light {
+  width: 5px;
+  height: 20px;
+  background: rgb(231, 255, 19);
+  position: absolute;
+  bottom: 90px;
+  left: 650px;
+  transform: skew(3deg);
+  box-shadow: 1px 1px 3px white;
+}
+
+.back-light {
+  width: 6px;
+  height: 25px;
+  background: red;
+  position: absolute;
+  bottom: 100px;
+  left: 25px;
+  transform: skew(-1deg);
+  box-shadow: -1px -1px 2px 1px rgb(223, 2, 2);
+}
+
+.light {
+  width: 250px;
+  height: 150px;
+  background: rgba(205, 205, 6, 0.966);
+  position: absolute;
+  bottom: 30px;
+  left: 670px;
+  background: linear-gradient(to right, yellow 40%, grey);
+  clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0 60%, 0 40%);
+  visibility: hidden;
+}
+
+
+.sun {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient( yellow 10px, orange 50px, yellow 10px);
+  position: absolute;
+  bottom: 400px;
+  right: 200px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 20px #ffde0080, 0 0 0 40px #ffde0040, 0 0 0 60px #ffde0020,
+    0 0 0 80px #ffde0010, 0 0 0 100px #ffde0000, 0 0 40px 100px #ffde0010;
+
+  animation: sunrise 2s infinite linear forwards, rays 2s 2s infinite linear;
+  visibility: hidden;
+}
+
+@keyframes sunrise {
+  0% {
+    box-shadow: none;
+  }
+}
+
+@keyframes rays {
+  0% {
+    box-shadow: 0 0 0 0 #ffde0080, 0 0 0 20px #ffde0080, 0 0 0 40px #ffde0040,
+      0 0 0 60px #ffde0020, 0 0 0 80px #ffde0010, 0 0 0 100px #ffde0000,
+      0 0 40px 100px #ffde0010;
+  }
+
+  100% {
+    box-shadow: 0 0 0 20px #ffde0080, 0 0 0 40px #ffde0040, 0 0 0 60px #ffde0020,
+      0 0 0 80px #ffde0010, 0 0 0 100px #ffde0000, 0 0 40px 100px #ffde0010;
+  }
+}
+
+.moon {
+  width: 100px;
+  height: 100px;
+  background: white;
+  position: absolute;
+  bottom: 400px;
+  left: 200px;
+  border-radius: 50%;
+  opacity: 0.9;
+  box-shadow: 0px 0px 70px 10px white;
+  z-index: 1;
+  visibility: hidden;
+}
+
+.sun_bg
+{
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  background: linear-gradient(to bottom, skyblue 300px , white);
+  visibility: hidden;
+  z-index: -1;
+}
+
+.moon_bg
+{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to bottom, black 30%,grey);
+  visibility: hidden;
+  z-index: -1;
+}
+button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 0 20px green,
+  0 0 40px greenyellow;
+}
+
+.Batman
+{
+  width: 35px;
+  height: 35px;
+  background-color: red;
+  color: wheat;
+  border-radius: 50%;
+}

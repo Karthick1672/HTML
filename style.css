@@ -1,0 +1,47 @@
+/* Type selector - we can give any tag*/
+h2{
+    color: white;
+    background: black;
+}
+/* type selector */
+b,strong{
+    color: rgb(255, 255, 255);
+}
+/* Id selector */
+#history
+{
+    color: black;
+}
+/*universal selector */
+*
+{
+    color: blue;
+}
+/* class selector */
+.Etymology{
+    color:rosybrown;
+}
+/* Child Selector (p tag)*/
+div>p{
+    color:violet;
+}
+/* Grandparent Selector (div - p - b) */
+div p b{
+    color: black;
+}
+/* sibling Selector */
+p~p{
+    color: maroon;
+}
+h3{
+    color: rgba(54, 149, 7, 0.606);
+    /* background: rgb(2, 34, 82); */
+    background-color: rgb(245, 178, 189);
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: cursive ;   
+}
+h4{
+    font-style: b
+}

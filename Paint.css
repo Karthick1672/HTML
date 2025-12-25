@@ -1,0 +1,66 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+.container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header
+{
+    width: 100%;
+    height: 130px;
+    background-color: #212121;
+}
+footer
+{
+    width: 100%;
+    height: 30px;
+    background-color: #212121;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.mouseImg
+{
+    width: 100px;
+    height: inherit;
+    background-color: #212121;
+    display: flex;
+}
+
+.mouseImg img
+{
+    width: 30px;
+    height: inherit;
+    transform: scale(0.6) rotate(30deg);
+    background-color: #212121;
+}
+
+#mouseValue
+{
+    width: 100px;
+    height: inherit;
+    background-color: #212121;
+    color: aliceblue;
+    font-size: 11px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 6px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+
+.ZoomContainer
+{
+    width: 100px;
+    height: inherit;
+    background-color: aqua;
+    margin-left: 10px;
+}

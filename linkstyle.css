@@ -1,0 +1,37 @@
+h2
+{
+    /* text-transform: uppercase; */
+    font-family: cursive;
+}
+p{
+
+    text-indent: 75px;
+    line-height: 1.5em;
+    text-align: justify;
+    text-shadow: 6px 6px 4px gray;
+}
+p::first-letter
+{
+    font: 1.5em sans-serif;
+    font-style: italic;
+}
+a:visited
+{
+    color: rgba(18, 249, 214, 0.251);
+}
+a:link
+{
+    color: rgb(241, 117, 117);
+}
+a:hover
+{
+    color:rgb(235, 16, 144)
+}
+a:active
+{
+    color: aqua;
+}
+a:focus
+{
+    color: black;
+}

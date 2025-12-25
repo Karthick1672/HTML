@@ -1,0 +1,233 @@
+body
+{
+    background:linear-gradient(to right ,black 50%,white );
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.box4
+{
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    margin: 20px 25px ;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+}
+h2
+{
+    color: rgb(0, 255, 26);
+    position: absolute;
+    left: 300px;
+    top: 150px;
+    font-size: 2rem;
+}
+.calu
+{
+    width:  260px;
+    height: 80px;
+    position: absolute;
+    top: 50px;
+    resize: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px palevioletred;
+    font-size: 1.6rem;
+}
+
+#btn1
+{
+    margin-top: 600px;
+    margin-right: 230px;
+}
+
+.btn
+{
+    background-color: rgb(20, 129, 224);
+    color: rgb(244, 209, 52);
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.btn:hover
+{
+    background-color: darkkhaki;
+    font-style: italic;
+    font-weight: bold;
+}
+
+span
+{
+    color: aqua;
+    position: absolute;
+    top: 200px;
+    font-size: 2rem;
+}
+
+#box1
+{
+    position: relative;
+    top: 90px;
+    width: 350px;
+    height: 450px;    
+    background-color: black;
+    border-radius: 13px;
+    color: aquamarine;
+    font-size: 2rem;
+    display: grid;
+    justify-content: center;
+    border: 2px solid white;
+}
+/* cm to inches */
+h3
+{
+    font-size: 2rem;
+    font-style: italic;
+    position: relative;
+    background-color: black;
+    padding-left: 80px;
+}
+/* cm */
+h5
+{
+    background-color: black;
+    position: relative;
+    top: -120px;
+    right: -15px;
+    color: burlywood;
+}
+/* input box position */
+#inputdiv
+{
+    background-color: black;
+    width: 350px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* input box */
+#input
+{
+    position: relative;
+    top: -80px;
+    right: 20px;
+    width: 250px;
+    height: 30px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+/* summit button position & size */
+button
+{
+    position: relative;
+    bottom: 200px;
+    left: 120px;
+    width: 100px;
+    height: 50px;
+    border-radius: 55px;
+    background-color: rgb(38, 38, 188);
+    color: aliceblue;
+}
+button:hover
+{
+    background-color: greenyellow;
+    color: black;
+    font-weight: 200;
+}
+button:active
+{
+    background-color: red;
+}
+/* answer */
+#ansres
+{
+    position: relative;
+    bottom: 130px;
+    display: flex;
+    justify-content: center;
+    color: orange ;
+}
+/* Celsius to fahrenheit */
+.box2
+{
+    width: 350px;
+    height: 450px;    
+    background-color: black;
+    border-radius: 13px;
+    border: 2px solid white;
+    color: aquamarine;
+    font-size: 2rem;
+    display: grid;
+    justify-content: center;
+    position: relative;
+    top: 50px
+}
+/* celsius to fahrenheit */
+#h3
+{
+    font-size: 2rem;
+    font-style: italic;
+    position: relative;
+    background-color: black;
+    padding-left: 35px;
+}
+/* celsius */
+#h5
+{
+    background-color: black;
+    position: relative;
+    top: -120px;
+    right: -35px;
+    color: burlywood;
+}
+#inputbox
+{
+    background-color: black;
+    width: 350px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#input2
+{
+    position: relative;
+    top: -80px;
+    right: 40px;
+    width: 250px;
+    height: 30px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+#ansres2
+{
+    position: relative;
+    bottom: 130px;
+    display: flex;
+    justify-content: center;
+    color: orange ;
+}
+#box3
+{
+    width: 340px;
+    height: 350px;
+    border: 5px solid black;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+#input3
+{
+    height: 30px;
+    border-radius: 10px;
+    position: relative;
+    top: 20px;
+}
+#b1
+{
+    position: relative;
+    top: 230px;
+}

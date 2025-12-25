@@ -1,0 +1,110 @@
+<!DOCTYPE html>  <!--Form-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-4</title>
+</head>
+<body>
+    <h2 align="center">Form</h2>
+
+    <form action="Day3.html" method="get" enctype="multipart/form-data"><!--enctype="multipart/form-data" => if we give large file like resume,pdf.. we need to 'enctype'-->
+
+        <div>
+            <label for="us">Username</label>  <!-- if we click the username it indicates the input box-->
+            <input name="Username" id="us" required>    <!--for that purpose, we use the (id & for) in input and label-->
+            <label for="e">E-mail</label>
+            <input type="email" name="email" id="e" required>
+          <br>  
+          <input type="checkbox" name="Username & Password" id="up" required>
+            <label for="up">Username & Password</label> <em> (it is called checkbox)</em>
+        </div>
+        <hr><!--horizontal line-->
+        <em>Diff. in username & password <strong>(refer in program)</strong></em><hr>
+        <div>
+            <label>Password
+                <input type="password" value="" minlength="4" required> <br><em>min. 4 character using maxlength attribute</em>
+            </label>
+        </div>
+        <hr>
+        <div >
+            <label>Gender:</label>
+            <input type="radio" name="Gender" id="Male" value="Male">
+            <label for="Male">Male</label>
+            <br>
+            <input type="radio" name="Gender" id="Female" value="Female">
+            <label for="radio">Female</label>
+            <input type="radio" name="Gender" id="others" value="others">
+            <label for="others">Other</label>
+        </div>
+        <hr>
+        <div>
+            <label for="co">colour</label>
+            <input type="color" name="color" id="co" placeholder="color">
+        </div>
+        <hr>
+        <div>
+            <label for="">captcha</label>
+            <input placeholder="captcha" size="3" required> <br><em>it is called placeholder & size="3" is also used - it show the box size.</em>
+            <br>
+            <input type="checkbox" name="" id="c" required>
+            <label for="c">captcha done</label>
+        </div>
+        <hr>
+        <div>
+            <label >Age</label>
+            <input type="number" required minlength="2" min="18" max="56"> <br><em>data b/w 18-56 using (min="18" & max="56") attributes AND increases or decreases by 10 using step="10" in 'input tag'</em>
+        </div>
+        <hr>
+        <div>
+            <label for="dob">D.O.B</label>
+            <input type="date" name="" id="dob" min="2000-01-01" required>
+        </div>
+        <hr>
+        <div>
+            <label for="u">URL</label>
+            <input type="url" name="url" id="u" required>
+        </div>
+        <hr>
+        <div>
+            <label for="State">State</label>
+            <select name="State" id="State">
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Andhra pradesh">Andhra pradesh</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="others">others</option>
+            </select>  <em>(without multiple attribute)</em>
+        </div>
+        <div>
+            <label for="ma">Married status:</label>
+            <select name="Married status" id="ma" multiple>
+                <option value="Single parent">Single parent</option>
+                <option value="Single">Single</option>
+                <option value="Married">Married</option>
+                <option value="others">others</option>
+            </select><em>(with multiple attribute)</em>
+        </div>
+        <hr>
+        <div>
+            <label for="re">Resume</label>
+            <input type="file" name="Attached Resume" id="re" required>
+        </div>
+        <hr>
+        <div>
+            <label>feedback:</label><p></p>
+            <textarea name="" id="" cols="30" rows="10" placeholder="About us(optional)"></textarea>
+        </div>
+        <hr>
+        <!-- <button type="submit">sign up</button> <br><em>it is used to refresh or redirect the webpage(when action is given)</em> -->
+       <br> 
+       <button type="reset">reset</button><br><em>it reset the given data</em>
+       
+       <br>
+       <input type="image" src="images/submit.gif" width="300" height="150"> <br> <em>using images/gif as an submit button</em>
+
+       <br>
+       <input type="url">
+    </form>
+</body>
+</html>

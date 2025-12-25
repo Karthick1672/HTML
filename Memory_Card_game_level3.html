@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory_Card_game</title>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="CSS/Memory_Card_game_level3.css">
+    <script src="Javascript/Memory_Card_game_level3.js" defer></script>
+</head>
+<body>
+    <h3>Memory Game</h3>    
+
+    <div id="gameboard" class="game"></div>
+
+    <h2>Moves: <strong id="score">0</strong></h2>
+
+    <div class="nextlevel" id="nextlevel">
+        <!-- window.location.reload(); => to refresh a web page -->
+        <button type="button" class="refresh" id="refresh" onclick="window.location.reload();"><span></span>Try Again</button>
+        <button type="button" class="level" id="level" onclick="setTimeout(() =>{window.location.assign('Memory_Card_game_level2.html')},3000);"><span></span>Next Level</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Color-Change</title>
+    <link rel="stylesheet" href="CSS/Hex_2_Rgb.css">
+</head>
+<body>
+    <div class="hex2rgb">
+    
+    <!-- Headline -->
+    <h2 class="a1">Hex code to RGB convertor</h2>
+    
+    <!-- Hex code -->
+    <input placeholder="Hex-Code" class="input" name="text" type="text" id="hexin" maxlength="6" minlength="6">
+
+    <!-- Convert button -->
+    <button class="btn" id="con" onclick="convert()">Convert</button>
+
+    <!-- RGB values -->
+    <div class="card" id="card">
+        <div class="card-info"><p id="rgbin">R,G,B</p></div>
+    </div>
+    
+    <!-- Color display -->
+    <div class="displayer" id="displayer"></div>
+  
+    <div class="pickColor">
+        <button id="pick" class="btn">Pick Color</button>
+        <!-- <div class="dis" id="dis"></div> -->
+    </div>
+    <span id="pick_code">#ffffff</span>
+
+</div>
+
+    <div class="colorMixer">
+
+    <h2>RGB Color Mixer</h2>
+
+    <!-- 2 rgb color inputs -->
+    
+    <div class="rgb1">
+        <h3 class="a2">(Red,Green,Blue)</h3>
+    <!-- red1 -->
+    <input placeholder="0" class="rgbm" name="text" type="number" min="0" max="255" id="red1" onkeyup="display1()">
+
+    <!-- green1 -->
+    <input placeholder="0" class="rgbm" name="text" type="number" min="0" max="255" id="green1" onkeyup="display1()">
+
+    <!-- blue1 -->
+    <input placeholder="0" class="rgbm" name="text" type="number" min="0" max="255" id="blue1" onkeyup="display1()">
+    
+    <!-- rgb1 color display -->
+    <div class="display1" id="display1"></div>
+    </div>
+
+    
+    <div class="rgb2">
+    
+    <h3 class="a3">(Red,Green,Blue)</h3>
+    <!-- red2 -->
+    <input placeholder="0" class="rgbm" name="text" type="number" min="0" max="255" id="red2" onkeyup="display2()">
+
+    <!-- green2 -->
+    <input placeholder="0" class="rgbm" name="text" type="number" min="0" max="255" id="green2" onkeyup="display2()">
+
+    <!-- blue2 -->
+    <input placeholder="0" class="rgbm" name="text" type="number" min="0" max="255" id="blue2" onkeyup="display2()">
+    
+    <!-- rgb2 color display -->
+    <div class="display2" id="display2"></div>
+    </div>
+    
+    <!-- Mixer button -->
+    <button class="btn" id="mix" onclick="Mixer()">Mix</button>
+    
+    <div class="display3" id="display3"></div>
+    <span id="mix_code">(Red,Green,Blue)</span>
+    <span id="mix_Hex_code">#ffffff</span>
+    </div>
+    
+
+    <Script src="Javascript/Hex_2_Rgb.js"></Script>
+</body>
+</html>

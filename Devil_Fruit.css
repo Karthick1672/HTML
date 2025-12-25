@@ -1,0 +1,317 @@
+body{
+    margin: 0;
+    background: black;
+}
+.main,.movie
+{
+    width: 98%;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    /* background-color: #afecdb; */
+}
+.movie
+{
+    margin-top: 20px;
+}
+h1
+{
+    background: pink;
+    width: 100%;
+    margin-top: 60px;
+    text-align: center;
+}
+#onepiece
+{
+    margin: 0px;
+}
+.maincontainer
+{
+    position: relative;
+    width: 200px;
+    height: 300px;
+    background-color: black;
+}
+.card
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+.front
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: #ede7d1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px white,0 0 20px white;
+}
+.back
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: #189874;
+    border-radius: 10px;
+    transform: rotateY(180deg);
+    box-shadow: 0 0 10px #189874, 0 0 20px #189874;
+}
+.card:hover
+{
+    transform: rotateY(180deg);
+}
+img
+{
+    width: 130px;
+    height: 150px;
+    border-radius: 10px;
+}
+#Dfname
+{
+    margin-top: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: #ff0000;
+}
+.fruitImg
+{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.fruitData,.userData
+{
+    line-height: 1.5em;
+    padding-left: 10px;
+    font-family: cursive;
+    font-size: 14px;
+    font-weight: bold;
+}
+.userData
+{
+    color: white;
+}
+.dftype
+{
+    color: #ff0000;   
+}
+
+/* user profile */
+.userImg
+{
+    width: 100%;
+    height: 200px;
+    /* background: #ede7d1; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.pirate
+{
+    width: 160px;
+    height: 140px;
+}
+.pirateFlag
+{
+    width: 140px;
+    height: 120px;
+    background-color: black;
+    visibility: hidden;
+    position: absolute;
+    margin-bottom: 20px;
+}
+.userName
+{
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flagBox
+{
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #ff0000; */
+    margin-left: 130px;
+    /* margin-bottom: 50px; */
+}
+
+#hob,#issho,#bari,#kabu,#bian,#rocinante,
+#morgan,#daifuku,#juan,#eri,#toki,#fish,#shinobu,
+#devon,#king,#onimaru,#yamato,#maria,#doc,#bill,
+#avalo,#vasco,#prince,#kujaku,#honey,#lily,#don,
+#breed,#mad,#psycho,#bullet,#utadevil,#uta
+{
+    width: 100px;
+}
+
+#user1,#flag1,#user16,#flag16,#user31,#flag31,#user46,#flag46,#user60,#flag60,#user74,#flag74,#user88,#flag88,#user101,#flag101,#user117,#flag117,#user130,#flag130,
+#user2,#flag2,#user17,#flag17,#user32,#flag32,#user47,#flag47,#user61,#flag61,#user75,#flag75,#user89,#flag89,#user102,#flag102,#user118,#flag118,
+#user3,#flag3,#user18,#flag18,#user33,#flag33,#user48,#flag48,#user62,#flag62,#user76,#flag76,#user90,#flag90,#user103,#flag103,#user119,#flag119,
+#user4,#flag4,#user19,#flag19,#user34,#flag34,#user49,#flag49,#user63,#flag63,#user77,#flag77,#user91,#flag91,#user104,#flag104,#user120,#flag120,
+#user5,#flag5,#user20,#flag20,#user35,#flag35,#user50,#flag50,#user64,#flag64,#user78,#flag78,#user92,#flag92,#user105,#flag105,#user110,#flag110,
+#user6,#flag6,#user21,#flag21,#user36,#flag36,#user51,#flag51,#user65,#flag65,#user79,#flag79,#user93,#flag93,#user106,#flag106,#user121,#flag121,
+#user7,#flag7,#user22,#flag22,#user37,#flag37,#user52,#flag52,#user66,#flag66,#user80,#flag80,#user94,#flag94,#user107,#flag107,#user122,#flag122,
+#user8,#flag8,#user23,#flag23,#user38,#flag38,#user53,#flag53,#user67,#flag67,#user81,#flag81,#user95,#flag95,#user108,#flag108,#user123,#flag123,
+#user9,#flag9,#user24,#flag24,#user39,#flag39,#user54,#flag54,#user68,#flag68,#user82,#flag82,#user96,#flag96,#user109,#flag109,#user124,#flag124,
+#user10,#flag10,#user25,#flag25,#user40,#flag40,#user55,#flag55,#user69,#flag69,#user83,#flag83,#user97,#flag97,#user112,#flag112,#user125,#flag125,
+#user11,#flag11,#user26,#flag26,#user41,#flag41,#user56,#flag56,#user70,#flag70,#user84,#flag84,#user98,#flag98,#user113,#flag113,#user126,#flag126,
+#user12,#flag12,#user27,#flag27,#user42,#flag42,#user57,#flag57,#user71,#flag71,#user85,#flag85,#user99,#flag99,#user114,#flag114,#user127,#flag127,
+#user13,#flag13,#user28,#flag28,#user43,#flag43,#user58,#flag58,#user72,#flag72,#user86,#flag86,#user100,#flag100,#user115,#flag115,#user128,#flag128,
+#user14,#flag14,#user29,#flag29,#user44,#flag44,#user59,#flag59,#user73,#flag73,#user87,#flag87,#user111,#flag111,#user116,#flag116,#user129,#flag129,
+#user15,#flag15,#user30,#flag30,#user45,#flag45
+{
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 8px;
+    background-color: #ede7d1;
+}
+#user1:hover,#flag1:hover,#user16:hover,#flag16:hover,#user31:hover,#flag31:hover,#user46:hover,#flag46:hover,#user60:hover,#flag60:hover,#user74:hover,#flag74:hover,#user88:hover,#flag88:hover,#user101:hover,#flag101:hover,
+#user2:hover,#flag2:hover,#user17:hover,#flag17:hover,#user32:hover,#flag32:hover,#user47:hover,#flag47:hover,#user61:hover,#flag61:hover,#user75:hover,#flag75:hover,#user89:hover,#flag88:hover,#user102:hover,#flag102:hover,
+#user3:hover,#flag3:hover,#user18:hover,#flag18:hover,#user33:hover,#flag33:hover,#user48:hover,#flag48:hover,#user62:hover,#flag62:hover,#user76:hover,#flag76:hover,#user90:hover,#flag90:hover,#user103:hover,#flag103:hover,
+#user4:hover,#flag4:hover,#user19:hover,#flag19:hover,#user34:hover,#flag34:hover,#user49:hover,#flag49:hover,#user63:hover,#flag63:hover,#user77:hover,#flag77:hover,#user91:hover,#flag91:hover,#user104:hover,#flag104:hover,
+#user5:hover,#flag5:hover,#user20:hover,#flag20:hover,#user35:hover,#flag35:hover,#user50:hover,#flag50:hover,#user64:hover,#flag64:hover,#user78:hover,#flag78:hover,#user92:hover,#flag92:hover,#user105:hover,#flag105:hover,
+#user6:hover,#flag6:hover,#user21:hover,#flag21:hover,#user36:hover,#flag36:hover,#user51:hover,#flag51:hover,#user65:hover,#flag65:hover,#user79:hover,#flag79:hover,#user93:hover,#flag93:hover,#user106:hover,#flag106:hover,
+#user7:hover,#flag7:hover,#user22:hover,#flag22:hover,#user37:hover,#flag37:hover,#user52:hover,#flag52:hover,#user66:hover,#flag66:hover,#user80:hover,#flag80:hover,#user94:hover,#flag94:hover,#user107:hover,#flag107:hover,
+#user8:hover,#flag8:hover,#user23:hover,#flag23:hover,#user38:hover,#flag38:hover,#user53:hover,#flag53:hover,#user67:hover,#flag67:hover,#user81:hover,#flag81:hover,#user95:hover,#flag95:hover,#user108:hover,#flag108:hover,
+#user9:hover,#flag9:hover,#user24:hover,#flag24:hover,#user39:hover,#flag39:hover,#user54:hover,#flag54:hover,#user68:hover,#flag68:hover,#user82:hover,#flag82:hover,#user96:hover,#flag96:hover,#user109:hover,#flag109:hover,
+#user10:hover,#flag10:hover,#user25:hover,#flag25:hover,#user40:hover,#flag40:hover,#user55:hover,#flag55:hover,#user69:hover,#flag69:hover,#user83:hover,#flag83:hover,#user97:hover,#flag97:hover,#user113:hover,#flag113:hover,
+#user11:hover,#flag11:hover,#user26:hover,#flag26:hover,#user41:hover,#flag41:hover,#user56:hover,#flag56:hover,#user70:hover,#flag70:hover,#user84:hover,#flag84:hover,#user98:hover,#flag98:hover,#user111:hover,#flag111:hover,
+#user12:hover,#flag12:hover,#user27:hover,#flag27:hover,#user42:hover,#flag42:hover,#user57:hover,#flag57:hover,#user71:hover,#flag71:hover,#user85:hover,#flag85:hover,#user99:hover,#flag99:hover,#user112:hover,#flag112:hover,
+#user13:hover,#flag13:hover,#user28:hover,#flag28:hover,#user43:hover,#flag43:hover,#user58:hover,#flag58:hover,#user72:hover,#flag72:hover,#user86:hover,#flag86:hover,#user100:hover,#flag100:hover,#user114:hover,#flag114:hover,
+#user14:hover,#flag14:hover,#user29:hover,#flag29:hover,#user44:hover,#flag44:hover,#user59:hover,#flag59:hover,#user73:hover,#flag73:hover,#user87:hover,#flag87:hover,#user110:hover,#flag110:hover,#user115:hover,#flag115:hover,
+#user15:hover,#flag15:hover,#user30:hover,#flag30:hover,#user45:hover,#flag45:hover,
+#user116:hover,#flag116:hover,#user126:hover,#flag126:hover,
+#user117:hover,#flag117:hover,#user127:hover,#flag127:hover,
+#user118:hover,#flag118:hover,#user128:hover,#flag128:hover,
+#user119:hover,#flag119:hover,#user129:hover,#flag129:hover,
+#user120:hover,#flag120:hover,#user130:hover,#flag130:hover,
+#user121:hover,#flag121:hover,
+#user122:hover,#flag122:hover,
+#user123:hover,#flag123:hover,
+#user124:hover,#flag124:hover,
+#user125:hover,#flag125:hover
+{
+    box-shadow:  0 0 10px #ede7d1,0 0 20px #ede7d1;
+}
+#user1,#user10,#user15,#user20,#user26,#user31,#user36,#user44,#user49,#user54,#user59,#user64,#user69,#user74,#user79,#user84,#user89,#user104,#user109,#user114,#user119,#user124,#user129,
+#user2,#user11,#user16,#user21,#user27,#user32,#user37,#user45,#user50,#user55,#user60,#user65,#user70,#user75,#user80,#user85,#user90,#user105,#user110,#user115,#user120,#user125,#user130,
+#user3,#user12,#user17,#user22,#user28,#user33,#user38,#user46,#user51,#user56,#user61,#user66,#user71,#user76,#user81,#user86,#user101,#user106,#user111,#user116,#user121,#user126,
+#user4,#user13,#user18,#user23,#user29,#user34,#user39,#user47,#user52,#user57,#user62,#user67,#user72,#user77,#user82,#user87,#user102,#user107,#user112,#user117,#user122,#user127,
+#user5,#user14,#user19,#user24,#user30,#user35,#user40,#user48,#user53,#user58,#user63,#user68,#user73,#user78,#user83,#user88,#user103,#user108,#user113,#user118,#user123,#user128,
+#user6,#user7,#user8,#user9,#user25,#user41,#user42,#user43,#user91,#user92,#user93,#user94,#user95,#user95,#user96,#user97,#user98,#user99,#user100
+{
+    position: absolute;
+    visibility: hidden;
+}
+#peronaFlag,#absalomFlag,#moriaFlag
+{
+    width: 180px;
+}
+#kak,#drak,#ina,#epoi,#marc,#que
+{
+    color: orange;
+}
+#bug,#smoke,#cro,#ac,#zal,#ao,#ult,#ai,
+#ava
+{
+    color: blue;
+}
+#dazbonez,#la,#jua,#pic,#docq,#gaspa,
+#bree,#bull
+{
+    color: rgb(167, 163, 163);
+}
+#smok,#croc,#aoki
+{
+    color: blue;
+    margin-top: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+#dorp,#hin,#jewel,#lin,#galet,#pero,#oro,#wh,#mussh,#bin,
+#ut
+{
+    color: rgb(244, 132, 151);
+}
+#dal,#chop,#lass,#dor,#chak,#pel
+{
+    color: green;
+    margin-top: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+#pello
+{
+    color: rgba(165, 42, 42, 0.475);
+}
+#dalton,#cho,#las,#do,#cha,#pe
+{
+    color: green;
+}
+#mone,#sug,#barto,#tok,#sasa,#prin,#lil,#avel,#gil,
+#an
+{
+    color: lime;
+}
+#sm,#Dalma,#oper,#smoo,#mor,#stre,#kin,
+#yam,#strong,#vega
+{
+    color: white;
+}
+#ap,#mik,#bell,#doflam,#kali,#absa,#shik,#edwa,#peko,#le,#machvi,
+#roci,#jac,#mon,#dai,#mari,#kuja,#hone
+{
+    color: yellow;
+}
+#doflam,#trafal
+{
+    font-size: 18px;
+}
+
+#devil,#freed
+{
+    width: 170px;
+}
+#aceBox
+{
+    bottom: 10px;
+}
+#eric,#wap,#mori,#ivan,#gladi,#brul,#crac,
+#kata,#bel,#tam,#dev,#pag,#jes
+{
+    color:rgb(103, 5, 173)
+}
+#eust,#giol,#kanju,#treasure,#bac
+{
+    color: red;
+}
+#scrat,#bia,#diaman,#pud,#bun,#shin,#augu,
+#lar,#bil,#gai
+{
+    color: brown;
+}

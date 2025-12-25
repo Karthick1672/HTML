@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit convertor</title>
+    <link rel="stylesheet" href="CSS/Unit convertor.css">
+</head>
+
+<body> 
+    <h2>calculator</h2>
+    <div class="box4">
+        <!-- <textarea name="" id="cal" cols="30" rows="3" class="cal" ></textarea> -->
+        <input type="text" class="calu" id="calu">
+        <span class="span" id="span">0</span>
+    <div id="btn1">
+        <button class="btn" id="btn" onclick="calculate()" type="submit">=</button>
+    </div>
+        
+    </div>
+
+
+    <div id="box3">
+    </div>
+    <input type="text" id="input3" placeholder="Back-Ground Color">
+    <div id="b1">
+        <button type="submit" onclick="convert2()">change color</button>
+    </div>
+
+    <div class="box2">
+            <h3 id="h3">Celsius to fahrenheit</h3>
+            <div id="inputbox">
+            <h5 id="h5">celsius</h5>
+            <input type="number" id="input2" placeholder="celsius in degree" >
+            </div>
+            <!-- onclick used when button is clicked -->
+            <!-- convert() is a function defined by user -->
+            <div>
+                <button type="submit" onclick="convert1()">Convert to fahrenheit</button>
+            </div>
+            <div id="ansres2">
+            </div>
+    </div>
+    <div id="box1">
+        <h3>Cm to Inches</h3>
+        <div id="inputdiv">
+        <h5>cm</h5>
+        <input type="number" id="input" placeholder="length in cm" >
+        </div>
+        <!-- onclick used when button is clicked -->
+        <!-- convert() is a function defined by user -->
+        <div>
+            <button type="submit" onclick="convert()">Convert to Inches</button>
+        </div>
+        <div id="ansres">
+        </div>
+    </div>
+   
+    <script src="Javascript/Unit convertor.js">
+        
+    </script>
+</body>
+</html>

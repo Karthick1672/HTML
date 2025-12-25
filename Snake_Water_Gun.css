@@ -1,0 +1,106 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: pink;
+}
+.scoreBoard
+{
+    width: 100vw;
+    height: 50px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+p
+{
+    padding: 10px;
+}
+.display
+{
+    width: 100vw;
+    height: 350px;
+    /* background-color: aliceblue; */
+    /* z-index: 1; */
+    display: flex;
+}
+.systemDisplay
+{
+    width: 50%;
+    height: 100%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    /* color: green; */
+}
+.playerDisplay
+{
+    width: 50%;
+    height: 100%;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    /* color: red; */
+}
+.card
+{
+    width: 100vw;
+    height: 180px;
+    /* background-color: beige; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.choose
+{
+    position: absolute;
+    bottom: 10px;
+}
+.cd
+{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    margin: 2px;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#snakeImg, #waterImg
+{
+    border-radius: 10px;
+    width: 100px;
+    /* display: none; */
+    /* visibility: hidden; */
+}
+#gunImg
+{
+    overflow:hidden;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+#snakeImg1, #waterImg1, #gunImg1
+{
+    width: 210px;
+    height: 210px;
+    position: absolute;
+    border-radius: 10px;
+    visibility: hidden;
+}
+#ques1,#ques2
+{
+    width: 210px;
+    border-radius:10px ;
+    visibility: visible;
+}
