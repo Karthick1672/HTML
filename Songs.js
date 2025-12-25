@@ -1,0 +1,5 @@
+let allmusic = [
+    {
+        name:"Su"
+    }
+]
